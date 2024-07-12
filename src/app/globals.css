@@ -3,31 +3,46 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
+
+	.button-clip {
+		clip-path: polygon(6% 0, 100% 0, 100% 70%, 90% 100%, 8% 100%, 0 78%, 0 16%);
+	}
+
+	.button-gradient {
+		background: radial-gradient(circle, rgb(187, 117, 219) 18%, rgb(197, 36, 168) 100%);
+	}
+
+	.button-shadow {
+		box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+	}
+
+	.button-wrap-shadow {
+		filter: drop-shadow(1px 2px 8px rgba(205, 49, 207, 0.5));
+	}
+
+	.header-gradient {
+		background: linear-gradient(0deg, rgba(38, 35, 30, 1) 0%, rgba(62, 62, 62, 1) 100%);
+	}
 }
