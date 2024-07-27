@@ -11,7 +11,7 @@ export default function Navbar({}: Props) {
 				<Image
 					src="/images/RadiantPineLogo1.png"
 					alt="LLC logo"
-					width={40}
+					width={50}
 					height={30}
 					priority
 					className="mr-10 mb-0"
