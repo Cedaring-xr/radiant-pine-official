@@ -2,6 +2,9 @@ import React from 'react'
 
 type Props = {}
 
+// state is self-contained
+// props being passed down are the multiple text strings that are dynamic
+
 export default function TypingText({}: Props) {
 	return (
 		<div id="typing-box">
