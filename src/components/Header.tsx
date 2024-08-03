@@ -13,7 +13,7 @@ const Header = () => {
 	const [isSticky, setSticky] = useState(false)
 	const [menuOpen, setMenuOpen] = useState(false)
 	const [size, setSize] = useState<SizeProps>({ width: window.innerWidth, height: window.innerHeight })
-	const breakpoint = 764
+	const breakpoint = 768
 
 	const menuToggleOpen = () => {
 		document.body.classList.toggle('header-menu-open')
@@ -69,7 +69,7 @@ const Header = () => {
 					<h4
 						className={`text-black text-sm w-2/3 md:w-full lg:text-base mx-6 mt-2 serif-font ${stickySubtitle}`}
 					>
-						Website consultant and developer
+						Website consultant & developer
 					</h4>
 				</a>
 			</div>
@@ -83,37 +83,37 @@ const Header = () => {
 						{menuOpen && (
 							<div className="fixed bg-stone-700 text-white w-screen left-0 top-0 h-screen pt-6">
 								<a href="/">
-									<h1 className={`text-2xl text-amber-600 font-bold`}>Radiant Pine LLC</h1>
+									<h1 className={`text-2xl text-emerald-600 font-bold`}>Radiant Pine LLC</h1>
 								</a>
 								<ul className="flex flex-col justify-center items-center text-4xl gap-6">
 									<li>
 										<AiOutlineClose
 											onClick={menuToggleOpen}
-											className="absolute right-10 hover:text-amber-600 top-6"
+											className="absolute right-10 hover:text-pink-600 top-6"
 										/>
 									</li>
-									<li className="hover:text-amber-600">
+									<li className="hover:text-pink-600">
 										<button>
 											<a href="/about" className="">
 												about
 											</a>
 										</button>
 									</li>
-									<li className="hover:text-amber-600">
+									<li className="hover:text-pink-600">
 										<button>
 											<a href="/services" className="">
 												Services
 											</a>
 										</button>
 									</li>
-									<li className="hover:text-amber-600">
+									<li className="hover:text-pink-600">
 										<button>
 											<a href="/examples" rel="noreferrer" className="">
 												Examples
 											</a>
 										</button>
 									</li>
-									<li className="hover:text-amber-600">
+									<li className="hover:text-pink-600">
 										<button>
 											<a href="/blog" rel="noreferrer" className="">
 												Blog

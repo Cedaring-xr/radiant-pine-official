@@ -11,7 +11,7 @@ export function Model(props: any) {
 				geometry={nodes.Leaves001_Leavs_0.geometry}
 				material={materials.Leavs}
 				rotation={[-Math.PI / 2, 0, 0]}
-				scale={100}
+				scale={1}
 			/>
 			<mesh
 				castShadow
@@ -19,10 +19,10 @@ export function Model(props: any) {
 				geometry={nodes.Trank001_Trank_0.geometry}
 				material={materials.Trank}
 				rotation={[-Math.PI / 2, 0, 0]}
-				scale={100}
+				scale={1}
 			/>
 		</group>
 	)
 }
 
-useGLTF.preload('/pine_tree.glb')
+useGLTF.preload('models/pine_tree.glb')

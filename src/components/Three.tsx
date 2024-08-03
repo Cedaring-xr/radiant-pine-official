@@ -7,10 +7,10 @@ import { Model } from './TreeModel'
 
 function Three() {
 	return (
-		<div className="h-full w-full">
+		<div className="h-[800px] w-full">
 			<Canvas>
 				<Environment preset="forest" />
-				<OrbitControls />
+				{/* <OrbitControls /> */}
 				<Model />
 			</Canvas>
 		</div>
