@@ -57,7 +57,7 @@ body {
 	}
 
 	.pink-accent {
-		color: rgb(197, 36, 168);
+		color: #c524a8;
 	}
 	.gray-bg {
 		color: #3d3d3d;
@@ -69,9 +69,9 @@ body {
 		color: #000101;
 	}
 	.light-gray {
-		color: #8b8e8d;
+		color: #b0b1b1;
 	}
 	.near-white {
-		color: #f7f4fb;
+		background-color: #f7f4fb;
 	}
 }

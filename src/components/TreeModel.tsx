@@ -1,8 +1,10 @@
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export function Model(props: any) {
 	const { nodes, materials } = useGLTF('models/pine_tree.glb')
+
 	return (
 		<group {...props} dispose={null}>
 			<mesh
