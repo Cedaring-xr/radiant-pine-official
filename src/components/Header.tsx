@@ -3,6 +3,9 @@
 import { useEffect, useState } from 'react'
 import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
+import { HiMenu } from 'react-icons/hi'
+import UseAnimations from 'react-useanimations'
+import menu2 from 'react-useanimations/lib/menu2'
 
 type SizeProps = {
 	width: number
@@ -49,7 +52,7 @@ const Header = () => {
 		return () => window.removeEventListener('resize', handleResize)
 	}, [size.width])
 
-	const stickyHeader = isSticky && 'sticky bg-zinc-950 transition ease-in-out duration-500  -mt-16'
+	const stickyHeader = isSticky && 'sticky bg-[#000101] transition ease-in-out duration-500 -mt-16 z-30'
 	const stickyTitle = isSticky && 'mt-3 text-white text-2xl lg:text-[2.1rem]'
 	const stickySubtitle = isSticky && 'hidden'
 	const stickyNav = isSticky && 'mt-3'
@@ -59,7 +62,7 @@ const Header = () => {
 	return (
 		<div
 			id="header-container"
-			className={`transparent flex flex-row justify-between h-[60px] w-full z-10  sans-font absolute top-0 ${stickyHeader}`}
+			className={`transparent flex flex-row justify-between h-[60px] w-full sans-font absolute top-0 ${stickyHeader}`}
 		>
 			<div className="min-w-[250px]">
 				<a href="/">
@@ -73,23 +76,20 @@ const Header = () => {
 					</h4>
 				</a>
 			</div>
-			<nav className={`my-16 md:mr-24 lg:mr-24 xl:mr-48 ${stickyNav}`}>
+			<nav className={`my-16 md:mr-24 lg:mr-24 xl:mr-48 z-100 ${stickyNav}`}>
 				{size.width < breakpoint ? (
 					<>
-						<BiMenuAltRight
-							className={`text-7xl text-amber-600 -mt-5 ${stickyMobile}`}
-							onClick={menuToggleOpen}
-						/>
+						<HiMenu className={`text-6xl pink-accent ${stickyMobile}`} onClick={menuToggleOpen} />
 						{menuOpen && (
-							<div className="fixed bg-stone-700 text-white w-screen left-0 top-0 h-screen pt-6">
+							<div className="fixed bg-[#3d3d3d] text-white w-screen left-0 top-0 h-screen pt-6 z-100">
 								<a href="/">
-									<h1 className={`text-2xl text-emerald-600 font-bold`}>Radiant Pine LLC</h1>
+									<h1 className={`text-2xl text-[#02CD55] font-bold`}>Radiant Pine LLC</h1>
 								</a>
 								<ul className="flex flex-col justify-center items-center text-4xl gap-6">
 									<li>
 										<AiOutlineClose
 											onClick={menuToggleOpen}
-											className="absolute right-10 hover:text-pink-600 top-6"
+											className="absolute right-10 hover:text-[#c524a8] top-6"
 										/>
 									</li>
 									<li className="hover:text-pink-600">

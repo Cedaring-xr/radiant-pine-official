@@ -1,9 +1,13 @@
 import React from 'react'
 
-function SideSectionRight() {
+type SectionProps = {
+	text: string
+}
+
+const SideSectionRight: React.FC<SectionProps> = ({ text }) => {
 	return (
 		<div className="relative overflow-hidden">
-			<div id="svg-accent-container" className="flex min-w-[400px] ml-4">
+			<div id="svg-accent-container" className="flex min-w-[400px] z-20 ml-4">
 				<svg
 					width="1174.2257"
 					height="270.42206"
@@ -70,9 +74,7 @@ function SideSectionRight() {
 					</g>
 				</svg>
 			</div>
-			<p className="text-white absolute top-[40%] md:text-3xl left-[40%]">
-				Call now for <span>Exclusive Offers!</span>
-			</p>
+			<p className="text-white absolute top-[40%] md:text-3xl left-[40%]">{text}</p>
 		</div>
 	)
 }

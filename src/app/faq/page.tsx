@@ -27,7 +27,7 @@ function FAQpage() {
 					<h4></h4>
 				</li>
 				<li className="question">
-					<h4>How does SEO work?</h4>
+					<h4>What is SEO?</h4>
 				</li>
 				<li className="question">
 					<h4>Should you manage and update your website by yourself?</h4>

@@ -1,3 +1,5 @@
+'use client'
+
 import Button from '@/components/Button'
 import Image from 'next/image'
 import Parallax from '@/components/Parallax'
@@ -6,8 +8,14 @@ import Three from '@/components/Three'
 import SideSectionRight from '@/components/SideSectionRight'
 import SideSectionSmallLeft from '@/components/SideSectionSmallLeft'
 import SideSectionLeft from '@/components/SideSectionLeft'
+import { useLayoutEffect } from 'react'
+import gsap from 'gsap'
 
 export default function Home() {
+	// useLayoutEffect(() => {
+	// 	gsap.from('.test-svg', { duration: 5, drawSVG: 0 })
+	// }, [])
+
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-between .near-white">
 			<Three></Three>
@@ -20,9 +28,8 @@ export default function Home() {
 			<div className="w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex mt-24 mb-20 flex">
 				<Button></Button>
 			</div>
-			<div className="h-[200px]"></div>
 			<div className="w-full relative">
-				<SideSectionRight />
+				<SideSectionRight text="Find out if we are a good fit for working with you." />
 				<SideSectionLeft />
 				<SideSectionSmallLeft />
 				<div
@@ -34,7 +41,7 @@ export default function Home() {
 						height="97mm"
 						viewBox="0 0 210 197"
 						version="1.1"
-						id="svg5"
+						id="svg-test"
 						className="z-10"
 						xmlns="http://www.w3.org/2000/svg"
 					>
@@ -42,7 +49,7 @@ export default function Home() {
 						<g id="layer1">
 							<path
 								style={{
-									fill: '#00f5ae',
+									fill: '#02CD55',
 									'fill-opacity': 1,
 									stroke: '#000000',
 									'stroke-width': 0.264583,
@@ -55,7 +62,7 @@ export default function Home() {
 							/>
 							<circle
 								style={{
-									fill: '#00f5ae',
+									fill: '#02CD55',
 									'fill-opacity': 1,
 									stroke: '#000000',
 									'stroke-width': 0.265,
@@ -86,7 +93,7 @@ export default function Home() {
 							<g id="g2605" transform="translate(163.9937,211.93244)">
 								<circle
 									style={{
-										fill: '#00f5ae',
+										fill: '#02CD55',
 										'fill-opacity': 1,
 										stroke: '#000000',
 										'stroke-width': 0.265,
@@ -130,7 +137,7 @@ export default function Home() {
 						<g id="layer1">
 							<path
 								style={{
-									fill: '#00f5ae',
+									fill: '#02CD55',
 									'fill-opacity': 1,
 									stroke: '#000000',
 									'stroke-width': 0.264583,
