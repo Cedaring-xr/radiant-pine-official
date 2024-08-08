@@ -16,6 +16,9 @@ function Services() {
 						</p>
 					</li>
 					<li>
+						<h4>Website monitoring for outages</h4>
+					</li>
+					<li>
 						<h4>SEO understanding and improvements</h4>
 						<p>SEO (Search Engine Optimization) is the </p>
 					</li>

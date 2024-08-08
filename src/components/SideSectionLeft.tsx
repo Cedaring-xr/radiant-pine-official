@@ -1,6 +1,10 @@
 import React from 'react'
 
-function SideSectionLeft() {
+type SectionProps = {
+	text: string
+}
+
+const SideSectionLeft: React.FC<SectionProps> = ({ text }) => {
 	return (
 		<div className="relative z-20 overflow-hidden">
 			<div id="svg-accent-container" className="flex min-w-[400px] mr-4">
@@ -10,7 +14,7 @@ function SideSectionLeft() {
 					viewBox="0 0 310.68054 71.549172"
 					version="1.1"
 					id="svg5"
-					className="-left-24 relative"
+					className="-left-12 relative"
 					xmlns="http://www.w3.org/2000/svg"
 				>
 					<defs id="defs2" />
@@ -70,9 +74,7 @@ function SideSectionLeft() {
 					</g>
 				</svg>
 			</div>
-			<p className="text-white absolute top-[40%] ml-2 right-[40%]">
-				Call now for <span>Exclusive Offers!</span>
-			</p>
+			<p className="text-white absolute top-[40%] ml-8 right-[30%]">{text}</p>
 		</div>
 	)
 }

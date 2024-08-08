@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@100..900&family=Rowdies:wght@300;400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -35,7 +37,7 @@ body {
 	}
 
 	.button-shadow {
-		box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+		box-shadow: rgb(38, 57, 77) 0px 10px 20px -50px;
 	}
 
 	.button-wrap-shadow {
@@ -73,5 +75,15 @@ body {
 	}
 	.near-white {
 		background-color: #f7f4fb;
+	}
+}
+
+@layer components {
+	.serif-font {
+		font-family: 'Noto Serif Tibetan', serif;
+	}
+
+	.headline-font {
+		font-family: 'Rowdies', sans-serif;
 	}
 }

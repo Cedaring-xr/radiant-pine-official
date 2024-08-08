@@ -1,4 +1,5 @@
 import React from 'react'
+import { HiArrowCircleRight } from 'react-icons/hi'
 
 type SectionProps = {
 	text: string
@@ -6,7 +7,7 @@ type SectionProps = {
 
 const SideSectionRight: React.FC<SectionProps> = ({ text }) => {
 	return (
-		<div className="relative overflow-hidden">
+		<div className="relative ">
 			<div id="svg-accent-container" className="flex min-w-[400px] z-20 ml-4">
 				<svg
 					width="1174.2257"
@@ -14,7 +15,7 @@ const SideSectionRight: React.FC<SectionProps> = ({ text }) => {
 					viewBox="0 0 310.68054 71.549172"
 					version="1.1"
 					id="svg5"
-					className="relative -right-12"
+					className="relative -right-4"
 					xmlns="http://www.w3.org/2000/svg"
 				>
 					<defs id="defs2" />
@@ -74,7 +75,14 @@ const SideSectionRight: React.FC<SectionProps> = ({ text }) => {
 					</g>
 				</svg>
 			</div>
-			<p className="text-white absolute top-[40%] md:text-3xl left-[40%]">{text}</p>
+			<div className="absolute top-[40%] left-[30%]">
+				<p className="text-white  md:text-xl serif-font">{text}</p>
+				<button className="z-12">
+					<a href="/about">
+						<HiArrowCircleRight className="text-2xl fill-[#02cd55] mt-4" />
+					</a>
+				</button>
+			</div>
 		</div>
 	)
 }

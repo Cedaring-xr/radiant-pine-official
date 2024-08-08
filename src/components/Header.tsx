@@ -55,7 +55,7 @@ const Header = () => {
 	const stickyHeader = isSticky && 'sticky bg-[#000101] transition ease-in-out duration-500 -mt-16 z-30'
 	const stickyTitle = isSticky && 'mt-3 text-white text-2xl lg:text-[2.1rem]'
 	const stickySubtitle = isSticky && 'hidden'
-	const stickyNav = isSticky && 'mt-3'
+	const stickyNav = isSticky && 'mt-5'
 	const stickyButton = isSticky && 'border-none'
 	const stickyMobile = isSticky && '-mt-4 md:-mr-24'
 
@@ -66,7 +66,9 @@ const Header = () => {
 		>
 			<div className="min-w-[250px]">
 				<a href="/">
-					<h1 className={`text-2xl md:text-3xl lg:text-5xl text-black font-bold mt-12 ml-6 ${stickyTitle}`}>
+					<h1
+						className={`text-2xl md:text-3xl lg:text-5xl headline-font text-black mt-12 ml-6 ${stickyTitle}`}
+					>
 						Radiant Pine LLC
 					</h1>
 					<h4
@@ -79,17 +81,17 @@ const Header = () => {
 			<nav className={`my-16 md:mr-24 lg:mr-24 xl:mr-48 z-100 ${stickyNav}`}>
 				{size.width < breakpoint ? (
 					<>
-						<HiMenu className={`text-6xl pink-accent ${stickyMobile}`} onClick={menuToggleOpen} />
+						<HiMenu className={`text-5xl pink-accent ${stickyMobile}`} onClick={menuToggleOpen} />
 						{menuOpen && (
-							<div className="fixed bg-[#3d3d3d] text-white w-screen left-0 top-0 h-screen pt-6 z-100">
+							<div className="fixed bg-[#3d3d3d] text-white w-screen left-0 top-0 h-screen pt-2 z-100">
 								<a href="/">
-									<h1 className={`text-2xl text-[#02CD55] font-bold`}>Radiant Pine LLC</h1>
+									<h1 className={`text-2xl text-white headline-font`}>Radiant Pine LLC</h1>
 								</a>
 								<ul className="flex flex-col justify-center items-center text-4xl gap-6">
 									<li>
 										<AiOutlineClose
 											onClick={menuToggleOpen}
-											className="absolute right-10 hover:text-[#c524a8] top-6"
+											className="absolute right-10 hover:text-[#c524a8]"
 										/>
 									</li>
 									<li className="hover:text-pink-600">

@@ -1,6 +1,10 @@
 import React from 'react'
 
-function SideSectionSmallLeft() {
+type SectionProps = {
+	text: string
+}
+
+const SideSectionSmallLeft: React.FC<SectionProps> = ({ text }) => {
 	return (
 		<div className="relative z-20">
 			<div id="svg-accent-container" className="flex min-w-[400px] ml-4">
@@ -10,7 +14,7 @@ function SideSectionSmallLeft() {
 					viewBox="0 0 170.37606 29.702896"
 					version="1.1"
 					id="svg5"
-					className="relative -left-12"
+					className="relative -left-12 max-w-[500px]"
 					xmlns="http://www.w3.org/2000/svg"
 				>
 					<defs id="defs2" />
@@ -18,7 +22,7 @@ function SideSectionSmallLeft() {
 						<path
 							id="rect31"
 							style={{
-								fill: '#b0b1b1',
+								fill: '#121313',
 								'fill-opacity': 1,
 								stroke: 'none',
 								'stroke-width': 0.493454,
@@ -31,9 +35,7 @@ function SideSectionSmallLeft() {
 					</g>
 				</svg>
 			</div>
-			<p className="absolute top-[40%] md:text-3xl left-[15%] font-bold">
-				Call now for <span>Exclusive Offers!</span>
-			</p>
+			<p className="absolute top-[35%] md:text-3xl left-[15%] font-bold text-white">{text}</p>
 		</div>
 	)
 }
