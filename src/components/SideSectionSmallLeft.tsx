@@ -22,7 +22,7 @@ const SideSectionSmallLeft: React.FC<SectionProps> = ({ text }) => {
 						<path
 							id="rect31"
 							style={{
-								fill: '#121313',
+								fill: '#f7f4fb',
 								'fill-opacity': 1,
 								stroke: 'none',
 								'stroke-width': 0.493454,
@@ -35,7 +35,7 @@ const SideSectionSmallLeft: React.FC<SectionProps> = ({ text }) => {
 					</g>
 				</svg>
 			</div>
-			<p className="absolute top-[35%] md:text-3xl left-[15%] font-bold text-white">{text}</p>
+			<p className="absolute top-[35%] md:text-3xl left-[15%] font-bold text-black">{text}</p>
 		</div>
 	)
 }

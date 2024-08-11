@@ -4,9 +4,10 @@ const SVGcircuit = (props: SVGProps<SVGSVGElement>) => (
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
 		xmlnsXlink="http://www.w3.org/1999/xlink"
-		width={367.355}
+		width={867.355}
 		height={570.22}
 		viewBox="0 0 203.029 256.704"
+		className="z-0"
 		{...props}
 	>
 		<defs>
@@ -52,7 +53,7 @@ const SVGcircuit = (props: SVGProps<SVGSVGElement>) => (
 		<path
 			d="m8.84 240.407 1.73-1.73 17 17-1.73 1.73zM150.188 240.407l-1.73-1.73-17 17 1.73 1.73zM27.57 64.114l-1.73-1.73-17 17 1.73 1.73z"
 			style={{
-				fill: '#02cd55',
+				fill: '#89f7fe',
 				stroke: '#000',
 				strokeWidth: 0.264999
 			}}
@@ -61,7 +62,7 @@ const SVGcircuit = (props: SVGProps<SVGSVGElement>) => (
 		<path
 			d="M25.123 10.439h2.446v53.675h-2.446zM25.84 257.407v-2.447h53.674v2.447zM79.514 257.407v-2.447h53.674v2.447zM8.84 79.383h2.446v53.675H8.84ZM8.84 133.058h2.446v53.674H8.84ZM8.84 186.732h2.446v53.675H8.84Z"
 			style={{
-				fill: '#02cd55',
+				fill: '#89f7fe',
 				stroke: '#000',
 				strokeWidth: 0.25
 			}}
@@ -82,7 +83,7 @@ const SVGcircuit = (props: SVGProps<SVGSVGElement>) => (
 		<path
 			d="M123.668 214.443h2.447v53.674h-2.447z"
 			style={{
-				fill: '#02cd55',
+				fill: '#89f7fe',
 				stroke: '#000',
 				strokeWidth: 0.25
 			}}

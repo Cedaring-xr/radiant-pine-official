@@ -53,7 +53,7 @@ const SVGcircuit2 = (props: SVGProps<SVGSVGElement>) => (
 		<path
 			d="m207.494 22.077-1.73 1.73-17-17 1.73-1.73zM66.146 22.077l1.73 1.73 17-17-1.73-1.73zM188.765 198.37l1.73 1.73 17-17-1.73-1.73z"
 			style={{
-				fill: '#02cd55',
+				fill: '#89f7fe',
 				stroke: '#000',
 				strokeWidth: 0.264999
 			}}
@@ -62,7 +62,7 @@ const SVGcircuit2 = (props: SVGProps<SVGSVGElement>) => (
 		<path
 			d="M191.211 252.045h-2.446v-53.674h2.446zM190.495 5.077v2.447H136.82V5.077zM136.82 5.077v2.447H83.145V5.077zM207.494 183.1h-2.446v-53.674h2.446zM207.494 129.426h-2.446V75.752h2.446zM207.494 75.752h-2.446V22.077h2.446z"
 			style={{
-				fill: '#02cd55',
+				fill: '#89f7fe',
 				stroke: '#000',
 				strokeWidth: 0.25
 			}}
@@ -71,7 +71,7 @@ const SVGcircuit2 = (props: SVGProps<SVGSVGElement>) => (
 		<path
 			d="M123.668 214.443h2.447v53.674h-2.447z"
 			style={{
-				fill: '#02cd55',
+				fill: '#89f7fe',
 				stroke: '#000',
 				strokeWidth: 0.25
 			}}

@@ -23,6 +23,15 @@ body {
 	background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
+p,
+h3,
+h4,
+h5,
+h6,
+span {
+	font-family: 'Noto Serif Tibetan', serif;
+}
+
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
@@ -65,7 +74,7 @@ body {
 		color: #3d3d3d;
 	}
 	.green-accent {
-		color: #02cd55;
+		color: #24c641;
 	}
 	.black-main {
 		color: #000101;
@@ -76,6 +85,9 @@ body {
 	.near-white {
 		background-color: #f7f4fb;
 	}
+	.blue {
+		color: #89f7fe;
+	}
 }
 
 @layer components {
@@ -85,5 +97,16 @@ body {
 
 	.headline-font {
 		font-family: 'Rowdies', sans-serif;
+	}
+
+	.column-item {
+		padding: 4rem;
+	}
+
+	.glass {
+		background: rgba(200, 200, 200, 0.2);
+		z-index: 10;
+		backdrop-filter: blur(20px);
+		box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
 	}
 }

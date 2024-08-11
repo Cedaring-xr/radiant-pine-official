@@ -4,6 +4,8 @@ import { FC } from 'react'
 import { useForm } from 'react-hook-form'
 import { sendEmail } from '@/utils/send-email'
 import Button from './Button'
+import { MdArrowRightAlt } from 'react-icons/md'
+import Link from 'next/link'
 
 export type FormData = {
 	name: string
@@ -20,8 +22,8 @@ const Contact: FC = () => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
-			<div className="mb-5 mt-5">
-				<label htmlFor="name" className="mb-2 block text-base font-medium text-white">
+			<div className="my-2">
+				<label htmlFor="name" className="mb-2 block text-base font-medium">
 					Name
 				</label>
 				<input
@@ -54,8 +56,15 @@ const Contact: FC = () => {
 				></textarea>
 			</div>
 			<div>
-				<button className="hover:shadow-form text-base font-semibold text-black">
-					<Button text="Submit"></Button>
+				<button className="hover:shadow-form text-xl  headline-font text-black" type="submit">
+					<div id="button-wrapper" className="button-wrap-shadow">
+						<div className="button-gradient button-clip button-shadow p-1">
+							<div className="button-clip bg-[#f7f4fb] px-4 py-0 items-center flex hover:bg-[#121313] hover:text-[#89f7fe]">
+								Submit
+								<MdArrowRightAlt className="text-4xl ml-2" />
+							</div>
+						</div>
+					</div>
 				</button>
 			</div>
 		</form>

@@ -20,7 +20,7 @@ const TypingText = () => {
 			]}
 			wrapper="span"
 			speed={60}
-			style={{ fontSize: '2em', display: 'inline-block' }}
+			style={{ fontSize: '2em', display: 'inline-block', color: '#fff' }}
 			repeat={Infinity}
 		/>
 	)

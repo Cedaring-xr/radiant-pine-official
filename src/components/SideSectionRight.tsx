@@ -7,7 +7,7 @@ type SectionProps = {
 
 const SideSectionRight: React.FC<SectionProps> = ({ text }) => {
 	return (
-		<div className="relative ">
+		<div className="relative z-20">
 			<div id="svg-accent-container" className="flex min-w-[400px] z-20 ml-4">
 				<svg
 					width="1174.2257"
@@ -79,7 +79,7 @@ const SideSectionRight: React.FC<SectionProps> = ({ text }) => {
 				<p className="text-white  md:text-xl serif-font">{text}</p>
 				<button className="z-12">
 					<a href="/about">
-						<HiArrowCircleRight className="text-2xl fill-[#02cd55] mt-4" />
+						<HiArrowCircleRight className="text-2xl fill-[#89f7fe] -mt-4 ml-48" />
 					</a>
 				</button>
 			</div>
