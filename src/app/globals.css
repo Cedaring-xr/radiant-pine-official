@@ -100,7 +100,8 @@ span {
 	}
 
 	.column-item {
-		padding: 4rem;
+		padding: 1rem;
+		min-width: 320px;
 	}
 
 	.glass {
@@ -108,5 +109,24 @@ span {
 		z-index: 10;
 		backdrop-filter: blur(20px);
 		box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+	}
+
+	.main-box-shadow {
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	}
+
+	/* parallax test stuff */
+	.parallax-outer {
+		overflow: hidden;
+	}
+
+	.parallax {
+		height: 110vh;
+		width: 100%;
+		position: relative;
+	}
+
+	.background-shadow {
+		box-shadow: #0b0d15 0px -30px 30px 40px;
 	}
 }

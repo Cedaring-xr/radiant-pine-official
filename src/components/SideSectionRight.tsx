@@ -7,8 +7,8 @@ type SectionProps = {
 
 const SideSectionRight: React.FC<SectionProps> = ({ text }) => {
 	return (
-		<div className="relative z-20">
-			<div id="svg-accent-container" className="flex min-w-[400px] z-20 ml-4">
+		<div className="relative z-20 flex justify-end">
+			<div id="svg-accent-container" className="flex min-w-[400px] max-w-[1000px] z-20 -mr-6  overflow-hidden">
 				<svg
 					width="1174.2257"
 					height="270.42206"
@@ -75,13 +75,13 @@ const SideSectionRight: React.FC<SectionProps> = ({ text }) => {
 					</g>
 				</svg>
 			</div>
-			<div className="absolute top-[40%] left-[30%]">
-				<p className="text-white  md:text-xl serif-font">{text}</p>
-				<button className="z-12">
+			<div className="absolute top-[40%] md:top-[33%] right-0 z-30 flex justify-end max-w-[75%]">
+				<p className="text-white  md:text-xl serif-font max-w-[800px] mr-1">{text}</p>
+				{/* <button className="z-30">
 					<a href="/about">
-						<HiArrowCircleRight className="text-2xl fill-[#89f7fe] -mt-4 ml-48" />
+						<HiArrowCircleRight className="text-2xl fill-cyan-400 m-6" />
 					</a>
-				</button>
+				</button> */}
 			</div>
 		</div>
 	)

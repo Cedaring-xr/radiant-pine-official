@@ -1,8 +1,30 @@
+import SideSectionLeft from '@/components/SideSectionLeft'
+import SideSectionRight from '@/components/SideSectionRight'
 import React from 'react'
 
 function FAQpage() {
 	return (
-		<div id="faq-container">
+		<div id="faq-container" className="bg-[#0b0d15]">
+			<div id="bottomImage" style={{ backgroundImage: `url(${'/images/8.png'})` }} className="bg-cover bg-fixed">
+				<div className="h-[800px] flex justify-center items-center">
+					<div className="w-[30%] h-[200px] glass rounded-xl flex justify-center items-center">
+						<h1 className="headline-font text-4xl blue ">Frequently Asked Questions</h1>
+					</div>
+				</div>
+			</div>
+			<div className="pt-24 text-white">
+				<SideSectionLeft text="In-depth website testing, bug investigations, functionality audit"></SideSectionLeft>
+				<div className="w-[60%] bg-stone-300 text-black serif-font pt-16 -translate-y-10 px-6 pb-12 rounded-xl font-serif">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita esse. Obcaecati
+						itaque ea quam, architecto velit amet dolorum dignissimos?
+					</p>
+				</div>
+
+				<SideSectionRight text="hello"></SideSectionRight>
+				<SideSectionLeft text="hello"></SideSectionLeft>
+				<SideSectionRight text="hello"></SideSectionRight>
+			</div>
 			<div>
 				<h2>Categories</h2>
 			</div>

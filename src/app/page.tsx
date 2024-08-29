@@ -8,54 +8,53 @@ import Three from '@/components/Three'
 import SideSectionRight from '@/components/SideSectionRight'
 import SideSectionSmallLeft from '@/components/SideSectionSmallLeft'
 import SideSectionLeft from '@/components/SideSectionLeft'
-import { useLayoutEffect } from 'react'
-import gsap from 'gsap'
 import SVGcircuit from '@/components/SVGcircuit'
 import SVGcircuit2 from '@/components/SVGcircuit2'
 import ColumnSections from '@/components/ColumnSections'
+import CenteredHighlight from '@/components/CenteredHighlight'
 
 export default function Home() {
-	// useLayoutEffect(() => {
-	// 	gsap.from('.test-svg', { duration: 5, drawSVG: 0 })
-	// }, [])
-
 	return (
 		<main className="flex min-h-screen flex-col items-center justify-between overflow-hidden bg-[#0b0d15]">
 			<div
 				id="image-container"
 				style={{ backgroundImage: `url(${'/images/mtnBackground.png'})` }}
-				className="w-screen absolute h-[897px] bg-cover"
+				className="w-full absolute h-[897px] bg-cover z-20"
 			></div>
-			<div className="z-20 flex flex-col md:flex-row">
-				<div className="w-screen md:w-[50%] border-2 border-red-500">
+			<div className="z-20 flex flex-col md:flex-row mb-24">
+				<div className="w-screen max-w-[50%]">
 					<Three></Three>
 				</div>
-				<div className=" serif-font p-4 w-full max-w-[700px] flex items-center border-2 border-green-500">
+				<div className=" serif-font p-4 md:w-[50%] max-w-[700px] flex items-center">
 					<TypingText></TypingText>
 				</div>
 			</div>
-
-			<div className="w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex mt-24 mb-20 flex">
-				<Button text="test" destination="/services"></Button>
-			</div>
-			{/* <div className="h-[300px] overflow-hidden mt-24 p-24 border-2 border-red-600">
-				<Parallax></Parallax>
-			</div> */}
+			<CenteredHighlight text="Independent Web development consultant" />
 			<div className="w-full relative">
-				<div className="h-[300px]"></div>
-				<SideSectionRight text="Find out if we are a good fit for working with you." />
-				<SideSectionLeft text="Hire someone with a deep passion for websites and quality." />
-				<SideSectionSmallLeft text="call now" />
-				<div id="circuit-svg-container" className="absolute z-10 top-0 flex flex-col w-full ml-4 mr-4 pt-0">
-					<div className="relative left-0 justify-start w-[50%]">
+				<div className="h-[200px]"></div>
+				<SideSectionRight text="I work on websites that were not professionally developed and managed by a web design studio." />
+				<div className="w-full h-[300px]"></div>
+				<SideSectionLeft text="I have 10+ years developing web applications professionally. I worked as a Quality Assurance Engineer testing and doing bug investigation on web applications." />
+				<SideSectionSmallLeft text="Have an idea in your head but need help on executing it" />
+				<div className="w-full h-[200px]"></div>
+				<SideSectionRight text="Looking to setup a website, but not sure how to do it properly? I can guide you through the process and speed up your launch time." />
+				<div className="w-full h-[100px]"></div>
+				<div
+					id="circuit-svg-container"
+					className="absolute z-10 top-0 flex flex-col w-full pt-0 pb-12 overflow-hidden"
+				>
+					<div className="relative left-0  mr-12 mb-8">
 						<SVGcircuit />
 					</div>
-					<div className="relative right-0 flex justify-end">
+					<div className="relative right-0 flex justify-end mt-[30vh] md:mt-2">
 						<SVGcircuit2 />
 					</div>
+					<div className="h-[1000px] w-[120vw] left-[10%] fixed top-[75vh] bg-[#0b0d15] -rotate-[15deg] background-shadow"></div>
 				</div>
 			</div>
-			<ColumnSections></ColumnSections>
+			<div className="z-20">
+				<ColumnSections></ColumnSections>
+			</div>
 		</main>
 	)
 }

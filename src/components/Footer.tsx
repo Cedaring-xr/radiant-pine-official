@@ -4,24 +4,24 @@ import { SlSocialGoogle } from 'react-icons/sl'
 
 function Footer() {
 	return (
-		<div className="bg-[#0b0d15]">
+		<div className="bg-[#0b0d15] z-30 relative">
 			<div
 				id="bottomImage"
-				style={{ backgroundImage: `url(${'/images/blueBorderCropped.png'})` }}
-				className="w-screen bg-cover"
+				style={{ backgroundImage: `url(${'/images/blueBorder16-9.png'})` }}
+				className="bg-cover"
 			>
-				<div className="text-white pb-16 pt-[300px]">
-					<h4 className="flex justify-center p-4 headline-font md:text-2xl">
-						Send me a message for a free consultation call
+				<div className="text-white pb-16 pt-[200px]">
+					<h4 className="flex justify-center p-2 headline-font md:text-2xl bg-stone-600 bg-opacity-80 w-[95%] max-w-[600px] mx-auto rounded-xl rounded-b-none">
+						Send me a message for a free consultation meeting
 					</h4>
 					<div
 						id="form-wrapper"
-						className="w-[95%] max-w-[600px] mx-auto p-6 bg-stone-900 bg-opacity-90 rounded-xl"
+						className="w-[95%] max-w-[600px] mx-auto p-6 bg-stone-900 bg-opacity-95 rounded-xl rounded-t-none"
 					>
 						<ContactForm></ContactForm>
 					</div>
 				</div>
-				<div className="w-full overflow-hidden flex justify-between p-2 text-white headline-font text-xs md:text-base">
+				<div className="w-full overflow-hidden flex justify-between p-2 pb-0 text-white headline-font text-xs md:text-base">
 					<span className="hover:text-[#c524a8]">
 						<a href="/website">About this site</a>
 					</span>

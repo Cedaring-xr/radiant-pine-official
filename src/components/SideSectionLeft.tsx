@@ -6,8 +6,8 @@ type SectionProps = {
 
 const SideSectionLeft: React.FC<SectionProps> = ({ text }) => {
 	return (
-		<div className="relative z-20 overflow-hidden">
-			<div id="svg-accent-container" className="flex min-w-[400px] mr-4">
+		<div className="relative z-20">
+			<div id="svg-accent-container" className="flex min-w-[400px] max-w-[900px] mr-4">
 				<svg
 					width="1174.2257"
 					height="270.42206"
@@ -74,7 +74,7 @@ const SideSectionLeft: React.FC<SectionProps> = ({ text }) => {
 					</g>
 				</svg>
 			</div>
-			<p className="text-white absolute top-[40%] ml-8 right-[30%]">{text}</p>
+			<p className="text-white absolute text-base md:text-xl serif-font left-4 top-[40%] max-w-[800px]">{text}</p>
 		</div>
 	)
 }

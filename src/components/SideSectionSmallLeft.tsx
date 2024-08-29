@@ -35,7 +35,7 @@ const SideSectionSmallLeft: React.FC<SectionProps> = ({ text }) => {
 					</g>
 				</svg>
 			</div>
-			<p className="absolute top-[35%] md:text-3xl left-[15%] font-bold text-black">{text}</p>
+			<p className="absolute top-[35%] text-base md:text-xl left-2 serif-font max-w-[30%] text-black">{text}</p>
 		</div>
 	)
 }
