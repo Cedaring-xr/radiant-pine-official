@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button'
 import { HiArrowCircleRight } from 'react-icons/hi'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function ColumnSections() {
 	return (
@@ -19,7 +20,7 @@ function ColumnSections() {
 						and CMS programs have no focus on thourghly testing their sites.
 					</p>
 					<div className="w-[130px] text-black relative float-end mr-24 mt-6">
-						<Button text="More" destination="/services"></Button>
+						<Button text="More" destination="/services#testing-section"></Button>
 					</div>
 				</div>
 				<div className="column-item lg:px-8">
@@ -29,7 +30,7 @@ function ColumnSections() {
 						consectetur officia dolorum tenetur corporis nisi.
 					</p>
 					<div className="w-[130px] text-black relative float-end mr-24 mt-6">
-						<Button text="More" destination="/services"></Button>
+						<Button text="More" destination="/services#updates-section"></Button>
 					</div>
 				</div>
 				<div className="column-item lg:px-8">
@@ -39,7 +40,7 @@ function ColumnSections() {
 						consectetur officia dolorum tenetur corporis nisi.
 					</p>
 					<div className="w-[130px] text-black relative float-end mr-24 mt-6">
-						<Button text="More" destination="/services"></Button>
+						<Button text="More" destination="/services#guidance-section"></Button>
 					</div>
 				</div>
 			</div>

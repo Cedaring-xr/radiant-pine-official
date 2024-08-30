@@ -25,8 +25,8 @@ const GlassHero: React.FC<GlassHeroProps> = ({ text }) => {
 	// }, [])
 
 	return (
-		<div className="w-[80%] md:w=[65%] lg:w-[50%] h-[250px] glass rounded-xl flex justify-center items-center">
-			<h1 className="headline-font text-4xl text-[#c524a8] ">{text}</h1>
+		<div className="w-[80%] md:w=[65%] lg:w-[50%] h-[250px] glass rounded-xl flex justify-center items-center transform: translateZ(0)">
+			<h1 className="headline-font text-4xl text-[#fff] ">{text}</h1>
 		</div>
 	)
 }

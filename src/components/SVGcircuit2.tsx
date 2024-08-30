@@ -5,7 +5,6 @@ const SvgCircuit2 = (props: SVGProps<SVGSVGElement>) => (
 		xmlns="http://www.w3.org/2000/svg"
 		xmlnsXlink="http://www.w3.org/1999/xlink"
 		viewBox="0 0 237.584 309.932"
-		className="z-0 w-screen max-w-[600px] min-w-[300px] relative left-0 mr-2 md:mr-[10%] lg:mr-[15%]"
 		{...props}
 	>
 		<defs>

@@ -121,7 +121,12 @@ const Header = () => {
 									</li>
 									<li className="hover:text-[#c524a8]">
 										<button>
-											<a href="/blog" rel="noreferrer" className="">
+											<a
+												href="https://www.radiantpine-devblog.com/"
+												target="blank"
+												rel="noreferrer"
+												className=""
+											>
 												Blog
 											</a>
 										</button>
@@ -173,8 +178,9 @@ const Header = () => {
 						<li>
 							<button className={` ${stickyButton}`}>
 								<a
-									href="/blog"
+									href="https://www.radiantpine-devblog.com/"
 									rel="noreferrer"
+									target="_blank"
 									className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
 								>
 									Blog
