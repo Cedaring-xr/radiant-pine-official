@@ -1,66 +1,40 @@
+'use client'
 import SideSectionLeft from '@/components/SideSectionLeft'
 import SideSectionRight from '@/components/SideSectionRight'
 import React from 'react'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { useLayoutEffect } from 'react'
+import AccordionTemplate from '@/components/Accordion'
 
 function FAQpage() {
+	gsap.registerPlugin(ScrollTrigger)
+	useLayoutEffect(() => {
+		gsap.to('.glass', {
+			y: 1800,
+			ease: 'none',
+			scrollTrigger: {
+				trigger: '#faq-container',
+				scrub: true
+			}
+		})
+	}, [])
 	return (
-		<div id="faq-container" className="bg-[#0b0d15]">
+		<div id="faq-container" className="bg-[#0b0d15] overflow-hidden">
 			<div id="bottomImage" style={{ backgroundImage: `url(${'/images/8.png'})` }} className="bg-cover bg-fixed">
-				<div className="h-[800px] flex justify-center items-center">
-					<div className="w-[30%] h-[200px] glass rounded-xl flex justify-center items-center">
-						<h1 className="headline-font text-4xl blue ">Frequently Asked Questions</h1>
+				<div id="main-box" className="h-[800px] flex justify-center items-top overflow-hidden">
+					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex justify-center items-center -mt-48">
+						<h1 className="headline-font text-4xl blue p-2">Frequently Asked Questions</h1>
 					</div>
 				</div>
 			</div>
-			<div className="pt-24 text-white">
-				<SideSectionLeft text="In-depth website testing, bug investigations, functionality audit"></SideSectionLeft>
-				<div className="w-[60%] bg-stone-300 text-black serif-font pt-16 -translate-y-10 px-6 pb-12 rounded-xl font-serif">
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, expedita esse. Obcaecati
-						itaque ea quam, architecto velit amet dolorum dignissimos?
-					</p>
-				</div>
-
-				<SideSectionRight text="hello"></SideSectionRight>
-				<SideSectionLeft text="hello"></SideSectionLeft>
-				<SideSectionRight text="hello"></SideSectionRight>
+			<div className="pt-12 text-white">
+				<h1 className="text-sm md:text-base lg:text-xl serif-font flex justify-center p-6 md:px-24">
+					*Feel free to email me if you have any other specific questions or need clarification on any
+					concepts of website creation
+				</h1>
+				<AccordionTemplate></AccordionTemplate>
 			</div>
-			<div>
-				<h2>Categories</h2>
-			</div>
-			<h3>New website creation</h3>
-			<ul>
-				<li className="question">
-					<h4>What is a CMS?</h4>
-				</li>
-				<li className="question">
-					<h4>How much should you be paying for a new website?</h4>
-				</li>
-				<li className="question">
-					<h4>Should you hire a designer/developer to build your website?</h4>
-				</li>
-			</ul>
-			<h3>Improving current website</h3>
-			<ul>
-				<li className="question">
-					<h4>How to assess if your website needs updates or improvements</h4>
-				</li>
-				<li className="question">
-					<h4></h4>
-				</li>
-				<li className="question">
-					<h4>What is SEO?</h4>
-				</li>
-				<li className="question">
-					<h4>Should you manage and update your website by yourself?</h4>
-				</li>
-			</ul>
-			<h3>Migrating a website</h3>
-			<ul>
-				<li className="question">
-					<h4>How to avoid vendor lock-in</h4>
-				</li>
-			</ul>
 		</div>
 	)
 }

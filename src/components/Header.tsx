@@ -63,7 +63,7 @@ const Header = () => {
 	return (
 		<div
 			id="header-container"
-			className={`transparent flex flex-row z-30 justify-between h-[60px] w-full sans-font absolute top-0 ${stickyHeader}`}
+			className={`transparent flex flex-row z-50 justify-between h-[60px] w-full sans-font absolute top-0 ${stickyHeader}`}
 		>
 			<div className="min-w-[250px] flex items-center">
 				<a href="/">
@@ -84,61 +84,63 @@ const Header = () => {
 					<>
 						<HiMenu className={`text-5xl pink-accent ${stickyMobile}`} onClick={menuToggleOpen} />
 						{menuOpen && (
-							<div
-								className="fixed text-white w-screen left-0 top-0 h-screen pt-2 z-100 bg-cover"
-								style={{ backgroundImage: `url(${'/images/mobileBackground.png'})` }}
-							>
-								<h1 className={`text-3xl text-[#89f7fe] headline-font ml-2 max-w-[400px]`}>
-									<a href="/">Radiant Pine LLC</a>
-								</h1>
-								<ul className="flex flex-col justify-center items-center text-4xl gap-8 mt-8  headline-font">
-									<li>
-										<AiOutlineClose
-											onClick={menuToggleOpen}
-											className="absolute right-10 hover:text-[#c524a8]"
-										/>
-									</li>
-									<li className="hover:text-[#c524a8] mt-12">
-										<button>
-											<a href="/about" className="">
-												About
-											</a>
-										</button>
-									</li>
-									<li className="hover:text-[#c524a8]">
-										<button>
-											<a href="/services" className="">
-												Services
-											</a>
-										</button>
-									</li>
-									<li className="hover:text-[#c524a8]">
-										<button>
-											<a href="/examples" rel="noreferrer" className="">
-												Examples
-											</a>
-										</button>
-									</li>
-									<li className="hover:text-[#c524a8]">
-										<button>
-											<a
-												href="https://www.radiantpine-devblog.com/"
-												target="blank"
-												rel="noreferrer"
-												className=""
-											>
-												Blog
-											</a>
-										</button>
-									</li>
-									<li className="hover:text-[#c524a8]">
-										<button>
-											<a href="/faq" rel="noreferrer" className="">
-												F.A.Q.
-											</a>
-										</button>
-									</li>
-								</ul>
+							<div className="relative z-50">
+								<div
+									className="fixed text-white w-screen left-0 top-0 h-screen pt-2 z-100 bg-cover"
+									style={{ backgroundImage: `url(${'/images/mobileBackground.png'})` }}
+								>
+									<h1 className={`text-3xl text-[#89f7fe] headline-font ml-2 max-w-[400px]`}>
+										<a href="/">Radiant Pine LLC</a>
+									</h1>
+									<ul className="flex flex-col justify-center items-center text-4xl gap-8 mt-8  headline-font">
+										<li>
+											<AiOutlineClose
+												onClick={menuToggleOpen}
+												className="absolute right-10 hover:text-[#c524a8]"
+											/>
+										</li>
+										<li className="hover:text-[#c524a8] mt-12">
+											<button>
+												<a href="/about" className="">
+													About
+												</a>
+											</button>
+										</li>
+										<li className="hover:text-[#c524a8]">
+											<button>
+												<a href="/services" className="">
+													Services
+												</a>
+											</button>
+										</li>
+										<li className="hover:text-[#c524a8]">
+											<button>
+												<a href="/examples" rel="noreferrer" className="">
+													Examples
+												</a>
+											</button>
+										</li>
+										<li className="hover:text-[#c524a8]">
+											<button>
+												<a
+													href="https://www.radiantpine-devblog.com/"
+													target="blank"
+													rel="noreferrer"
+													className=""
+												>
+													Blog
+												</a>
+											</button>
+										</li>
+										<li className="hover:text-[#c524a8]">
+											<button>
+												<a href="/faq" rel="noreferrer" className="">
+													F.A.Q.
+												</a>
+											</button>
+										</li>
+									</ul>
+								</div>
 							</div>
 						)}
 					</>

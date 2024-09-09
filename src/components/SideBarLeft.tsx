@@ -3,12 +3,14 @@ import { SVGProps } from 'react'
 
 type SideBarProps = {
 	text: string
+	additionalText?: string
+	thirdText?: string
 }
 
-const SideBarLeft: React.FC<SideBarProps> = ({ text }) => (
+const SideBarLeft: React.FC<SideBarProps> = ({ text, additionalText, thirdText }) => (
 	<div className="relative z-20 flex justify-start">
-		<div id="svg-accent-container" className="flex min-w-[400px] max-w-[1000px] z-20 -mr-6  overflow-hidden">
-			<svg xmlns="http://www.w3.org/2000/svg" width={1216.813} height={475.412} viewBox="0 0 321.948 125.786">
+		<div id="svg-accent-container" className="flex min-w-[300px] max-w-[750px] z-20 -ml-6  overflow-hidden">
+			<svg xmlns="http://www.w3.org/2000/svg" width={1216.813} height={275.412} viewBox="0 0 321.948 125.786">
 				<path
 					d="M267.968 116.36H-3.343c-3.607 0-6.51-6.908-6.51-15.489v-83.04c0-8.58 2.903-15.495 6.51-15.489L306.34 2.9c2.621.07 14.108 4.807 7.752 20.493l-31.393 77.48c-4.484 11.066-8.813 15.487-14.732 15.487z"
 					style={{
@@ -47,13 +49,12 @@ const SideBarLeft: React.FC<SideBarProps> = ({ text }) => (
 				/>
 			</svg>
 		</div>
-		<div className="absolute top-[40%] md:top-[33%] left-0 z-30 flex justify-start max-w-[75%]">
-			<p className="text-white  md:text-xl serif-font max-w-[800px] ml-1 md:ml-4">{text}</p>
-			{/* <button className="z-30">
-					<a href="/about">
-						<HiArrowCircleRight className="text-2xl fill-cyan-400 m-6" />
-					</a>
-				</button> */}
+		<div className="absolute top-[36%] sm:top-[33%] md:top-[25%] left-0 z-30 flex justify-start max-w-[85%]">
+			<p className="text-white  md:text-xl serif-font max-w-[600px] ml-4">
+				{text}
+				<span className="invisible sm:visible">{additionalText}</span>
+				<span className="invisible md:visible">{thirdText}</span>
+			</p>
 		</div>
 	</div>
 )

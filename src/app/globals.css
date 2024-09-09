@@ -99,11 +99,6 @@ span {
 		font-family: 'Rowdies', sans-serif;
 	}
 
-	.column-item {
-		padding: 1rem;
-		min-width: 320px;
-	}
-
 	.glass {
 		background: rgba(200, 200, 200, 0.2);
 		z-index: 10;
@@ -128,5 +123,13 @@ span {
 
 	.background-shadow {
 		box-shadow: #0b0d15 0px -30px 30px 40px;
+	}
+
+	.question {
+		font-size: 1.3rem;
+		font-weight: bold;
+		font-family: 'Noto Serif Tibetan', serif;
+		margin: 10px auto;
+		color: cyan;
 	}
 }
