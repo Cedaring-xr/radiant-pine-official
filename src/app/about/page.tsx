@@ -1,8 +1,6 @@
 'use client'
 import React from 'react'
 import { useLayoutEffect } from 'react'
-import TextBox from '@/components/TextBox'
-import GlassHero from '@/components/GlassHero'
 import SideBarRight from '@/components/SideBarRight'
 import SideBarLeft from '@/components/SideBarLeft'
 import gsap from 'gsap'
