@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiMenu } from 'react-icons/hi'
+import Link from 'next/link'
 
 type SizeProps = {
 	width: number
@@ -63,7 +64,7 @@ const Header = () => {
 			className={`transparent flex flex-row z-50 justify-between h-[60px] w-full sans-font absolute top-0 ${stickyHeader}`}
 		>
 			<div className="min-w-[250px] flex items-center">
-				<a href="/">
+				<Link href="/">
 					<h1
 						className={`text-2xl sm:text-3xl md:text-3xl lg:text-4xl headline-font text-white mt-8 ml-6 ${stickyTitle}`}
 					>
@@ -74,7 +75,7 @@ const Header = () => {
 					>
 						Website consultant & developer
 					</h4>
-				</a>
+				</Link>
 			</div>
 			<nav className={`mb-16 mt-6 md:mr-24 lg:mr-24 xl:mr-48 z-100 ${stickyNav}`}>
 				{size.width < breakpoint ? (
@@ -87,7 +88,7 @@ const Header = () => {
 									style={{ backgroundImage: `url(${'/images/mobileBackground.png'})` }}
 								>
 									<h1 className={`text-3xl text-[#89f7fe] headline-font ml-2 max-w-[400px]`}>
-										<a href="/">Radiant Pine LLC</a>
+										<Link href="/">Radiant Pine LLC</Link>
 									</h1>
 									<ul className="flex flex-col justify-center items-center text-4xl gap-8 mt-8  headline-font">
 										<li>
@@ -98,42 +99,42 @@ const Header = () => {
 										</li>
 										<li className="hover:text-[#c524a8] mt-12">
 											<button>
-												<a href="/about" className="">
+												<Link href="/about" className="">
 													About
-												</a>
+												</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
 											<button>
-												<a href="/services" className="">
+												<Link href="/services" className="">
 													Services
-												</a>
+												</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
 											<button>
-												<a href="/examples" rel="noreferrer" className="">
+												<Link href="/examples" rel="noreferrer" className="">
 													Examples
-												</a>
+												</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
 											<button>
-												<a
+												<Link
 													href="https://www.radiantpine-devblog.com/"
 													target="blank"
 													rel="noreferrer"
 													className=""
 												>
 													Blog
-												</a>
+												</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
 											<button>
-												<a href="/faq" rel="noreferrer" className="">
+												<Link href="/faq" rel="noreferrer" className="">
 													F.A.Q.
-												</a>
+												</Link>
 											</button>
 										</li>
 									</ul>
