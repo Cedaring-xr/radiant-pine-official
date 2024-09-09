@@ -1,6 +1,4 @@
 'use client'
-import SideSectionLeft from '@/components/SideSectionLeft'
-import SideSectionRight from '@/components/SideSectionRight'
 import React from 'react'
 import { useLayoutEffect } from 'react'
 import TextBox from '@/components/TextBox'

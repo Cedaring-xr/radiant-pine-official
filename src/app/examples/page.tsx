@@ -1,8 +1,5 @@
 'use client'
 import Image from 'next/image'
-import SideSectionLeft from '@/components/SideSectionLeft'
-import SideSectionRight from '@/components/SideSectionRight'
-import TextBox from '@/components/TextBox'
 import React from 'react'
 import Button from '@/components/Button'
 import { useLayoutEffect } from 'react'

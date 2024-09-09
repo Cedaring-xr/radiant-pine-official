@@ -1,6 +1,4 @@
 'use client'
-import SideSectionLeft from '@/components/SideSectionLeft'
-import SideSectionRight from '@/components/SideSectionRight'
 import React from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'

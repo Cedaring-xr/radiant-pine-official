@@ -1,13 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 'use client'
-import GlassHero from '@/components/GlassHero'
-import SideSectionLeft from '@/components/SideSectionLeft'
-import SideSectionRight from '@/components/SideSectionRight'
-import TextBox from '@/components/TextBox'
+
 import React, { useLayoutEffect } from 'react'
-import Button from '@/components/Button'
 import Image from 'next/image'
-import CenteredHighlight from '@/components/CenteredHighlight'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 

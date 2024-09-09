@@ -1,4 +1,4 @@
-import SideSectionLeft from '@/components/SideSectionLeft'
+import SideBarLeft from '@/components/SideBarLeft'
 import SVGcircuit from '@/components/SVGcircuit'
 
 function Website() {
@@ -12,7 +12,7 @@ function Website() {
 				<div className="bg-[#0b0d15] h-[600px] fixed top-[80vh] z-50 w-full background-shadow border-2 border-red-600 -rotate-12"></div>
 			</div>
 			<div>
-				<SideSectionLeft text="This website is built using Next.js"></SideSectionLeft>
+				<SideBarLeft text="This website is built using Next.js"></SideBarLeft>
 			</div>
 		</div>
 	)
