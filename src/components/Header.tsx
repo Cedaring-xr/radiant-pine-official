@@ -1,11 +1,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { BiMenuAltRight } from 'react-icons/bi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiMenu } from 'react-icons/hi'
-import UseAnimations from 'react-useanimations'
-import menu2 from 'react-useanimations/lib/menu2'
 
 type SizeProps = {
 	width: number

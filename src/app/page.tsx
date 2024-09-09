@@ -94,5 +94,3 @@ export default function Home() {
 		</main>
 	)
 }
-
-// className="z-0 w-screen max-w-[600px] min-w-[300px] relative left-0 ml-2 md:ml-[10%] lg:ml-[15%]"
