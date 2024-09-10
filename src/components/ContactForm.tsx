@@ -3,9 +3,7 @@
 import { FC } from 'react'
 import { useForm } from 'react-hook-form'
 import { sendEmail } from '@/utils/send-email'
-import Button from './Button'
 import { MdArrowRightAlt } from 'react-icons/md'
-import Link from 'next/link'
 
 export type FormData = {
 	name: string

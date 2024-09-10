@@ -13,7 +13,9 @@ type SizeProps = {
 const Header = () => {
 	const [isSticky, setSticky] = useState(false)
 	const [menuOpen, setMenuOpen] = useState(false)
-	const [size, setSize] = useState<SizeProps>({ width: window.innerWidth, height: window.innerHeight })
+	const [width, setWidth] = useState(0)
+	const [height, setHeight] = useState(0)
+	const [size, setSize] = useState<SizeProps>({ width: 0, height: 0 })
 	const breakpoint = 768
 
 	const menuToggleOpen = () => {
@@ -29,6 +31,11 @@ const Header = () => {
 		} else {
 			setSticky(false)
 		}
+	}
+
+	const handleWindowResize = () => {
+		setWidth(window.innerWidth)
+		setHeight(window.innerHeight)
 	}
 
 	useEffect(() => {
@@ -99,23 +106,17 @@ const Header = () => {
 										</li>
 										<li className="hover:text-[#c524a8] mt-12">
 											<button>
-												<Link href="/about" className="">
-													About
-												</Link>
+												<Link href="/about">About</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
 											<button>
-												<Link href="/services" className="">
-													Services
-												</Link>
+												<Link href="/services">Services</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
 											<button>
-												<Link href="/examples" rel="noreferrer" className="">
-													Examples
-												</Link>
+												<Link href="/examples">Examples</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
@@ -124,7 +125,6 @@ const Header = () => {
 													href="https://www.radiantpine-devblog.com/"
 													target="blank"
 													rel="noreferrer"
-													className=""
 												>
 													Blog
 												</Link>
@@ -132,9 +132,7 @@ const Header = () => {
 										</li>
 										<li className="hover:text-[#c524a8]">
 											<button>
-												<Link href="/faq" rel="noreferrer" className="">
-													F.A.Q.
-												</Link>
+												<Link href="/faq">F.A.Q.</Link>
 											</button>
 										</li>
 									</ul>
@@ -168,7 +166,6 @@ const Header = () => {
 							<button className={`${stickyButton}`}>
 								<a
 									href="/examples"
-									rel="noreferrer"
 									className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
 								>
 									Examples
@@ -191,7 +188,6 @@ const Header = () => {
 							<button className={` ${stickyButton}`}>
 								<a
 									href="/faq"
-									rel="noreferrer"
 									className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
 								>
 									FAQ
