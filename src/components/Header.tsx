@@ -13,9 +13,7 @@ type SizeProps = {
 const Header = () => {
 	const [isSticky, setSticky] = useState(false)
 	const [menuOpen, setMenuOpen] = useState(false)
-	const [width, setWidth] = useState(0)
-	const [height, setHeight] = useState(0)
-	const [size, setSize] = useState<SizeProps>({ width: 0, height: 0 })
+	const [size, setSize] = useState<SizeProps>({ width: 400, height: 800 })
 	const breakpoint = 768
 
 	const menuToggleOpen = () => {
@@ -33,11 +31,6 @@ const Header = () => {
 		}
 	}
 
-	const handleWindowResize = () => {
-		setWidth(window.innerWidth)
-		setHeight(window.innerHeight)
-	}
-
 	useEffect(() => {
 		window.addEventListener('scroll', handleScroll)
 		return () => {
@@ -52,6 +45,7 @@ const Header = () => {
 				height: window.innerHeight
 			})
 		}
+		handleResize()
 		window.addEventListener('resize', handleResize)
 
 		return () => window.removeEventListener('resize', handleResize)
