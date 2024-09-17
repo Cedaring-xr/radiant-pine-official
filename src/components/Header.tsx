@@ -99,22 +99,22 @@ const Header = () => {
 											/>
 										</li>
 										<li className="hover:text-[#c524a8] mt-12">
-											<button>
+											<button onClick={menuToggleOpen}>
 												<Link href="/about">About</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
-											<button>
+											<button onClick={menuToggleOpen}>
 												<Link href="/services">Services</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
-											<button>
+											<button onClick={menuToggleOpen}>
 												<Link href="/examples">Examples</Link>
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
-											<button>
+											<button onClick={menuToggleOpen}>
 												<Link
 													href="https://www.radiantpine-devblog.com/"
 													target="blank"
@@ -125,7 +125,7 @@ const Header = () => {
 											</button>
 										</li>
 										<li className="hover:text-[#c524a8]">
-											<button>
+											<button onClick={menuToggleOpen}>
 												<Link href="/faq">F.A.Q.</Link>
 											</button>
 										</li>
