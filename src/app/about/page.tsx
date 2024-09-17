@@ -27,7 +27,7 @@ function About() {
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/6a.png'})` }}
-				className="bg-cover bg-fixed z-20 relative"
+				className="bg-cover bg-fixed w-screen h-[670px] z-20 relative"
 			>
 				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
 					<div className="w-[90%] md:w-[60%] h-[120px] md:h-[200px] glass rounded-3xl flex justify-center items-center">

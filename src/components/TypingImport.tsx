@@ -8,19 +8,19 @@ const TypingText = () => {
 			<TypeAnimation
 				sequence={[
 					// Same substring at the start will only be typed out once, initially
-					'Helping small businesses feel more confident in their website!',
-					2000, // wait 2s before replacing text
-					'Helping small businesses get better value out of CMS products!',
-					2000,
-					'Helping small businesses create memorable online first impressions!',
-					2000,
-					'Helping small businesses gain knowledge about website creation!',
-					2000,
-					'Helping small businesses follow best practices for improved quality!',
-					2000
+					'Helping small businesses and individuals feel more confident with their website!',
+					4000, // wait 2s before replacing text
+					'Helping small businesses and individuals get better value out of CMS products!',
+					4000,
+					'Helping small businesses and individuals create memorable online first impressions!',
+					4000,
+					'Helping small businesses and individuals gain knowledge about website creation!',
+					4000,
+					'Helping small businesses and individuals follow best practices for improved quality!',
+					4000
 				]}
 				wrapper="span"
-				speed={60}
+				speed={50}
 				style={{ fontSize: '2em', display: 'inline-block', color: '#fff' }}
 				repeat={Infinity}
 			/>
