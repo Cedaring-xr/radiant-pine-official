@@ -19,7 +19,7 @@ function ColumnSections() {
 						Without proper testing, websites can look incomplete or unprofessional. Testing showcases what
 						pain points exist on a website and how to improve them. Testing for responsiveness across many
 						different devices, browsers, and layouts can make the difference between an easily readable
-						website and layouts cutting off texts and buttons. Without knowing what to improve, your website
+						website and layouts cutting off text and buttons. Without knowing what to improve, your website
 						might look unprofessional without you realizing it.
 					</p>
 					<div className="w-[130px] text-black relative float-end mr-24 mt-6">
@@ -27,9 +27,9 @@ function ColumnSections() {
 					</div>
 				</div>
 				<div className="column-item lg:px-8 lg:w-[30%]">
-					<h3 className="headline-font text-2xl text-cyan-400 py-4">Updates and monderizations</h3>
+					<h3 className="headline-font text-2xl text-cyan-400 py-4">Updates and mondernizations</h3>
 					<p>
-						Website updates are enevitible. Having a set process and knowing where and how to update
+						Website updates are inevitible. Having a set process and knowing where and how to update
 						information and design is important. Having someone to quickly go in and make changes can save
 						you a lot of time and headache.
 					</p>
@@ -40,8 +40,8 @@ function ColumnSections() {
 				<div className="column-item lg:px-8 lg:w-[30%]">
 					<h3 className="headline-font text-2xl text-cyan-400 py-4">Initial Guidance</h3>
 					<p>
-						Need to setup a website for the first time, but not sure how to do it right. I can help guide
-						you through the process making it as easy as possible while avoiding time costly mistakes.
+						Need to set up a website for the first time, but not sure how to do it correctly? I can help
+						guide you through the process making it as easy as possible while avoiding time costly mistakes.
 						Ultimately you own your website and content, I am just here to assist you through the process.
 					</p>
 					<div className="w-[130px] text-black relative float-end mr-24 mt-6">

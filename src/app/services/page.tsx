@@ -13,16 +13,21 @@ function Services() {
 			y: 1800,
 			ease: 'none',
 			scrollTrigger: {
-				trigger: '#services-container',
-				scrub: true
+				trigger: '#services-mainContainer',
+				scrub: true,
+				start: 'top top'
 			}
 		})
 	}, [])
 	return (
 		<div id="services-mainContainer" className="bg-[#0b0d15] overflow-hidden">
-			<div id="bottomImage" style={{ backgroundImage: `url(${'/images/16.png'})` }} className="bg-cover bg-fixed">
-				<div id="main-box" className="h-[800px] flex justify-center items-top overflow-hidden">
-					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex justify-center items-center mt-[350px]">
+			<div
+				id="bottomImage"
+				style={{ backgroundImage: `url(${'/images/16a.png'})` }}
+				className="bg-cover bg-fixed relative z-20"
+			>
+				<div id="main-box" className="h-[800px] flex justify-center items-center overflow-hidden">
+					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex justify-center items-center">
 						<h1 className="headline-font text-4xl blue p-2">Services</h1>
 					</div>
 				</div>
@@ -80,8 +85,8 @@ function Services() {
 						<p className="max-w-[700px]">
 							Accessibility refers to the ability to navigate and use a website by persons with
 							disabilities. ADA (American Disability Act) applies to online businesses as well as physical
-							locations. There are various guildines to adhering to ADA compliance when building a
-							website. Websites available as public services or aphiliated with city/government that are
+							locations. There are various guidelines to adhering to ADA compliance when building a
+							website. Websites available as public services or affiliated with city/government that are
 							not accessible could be subject to legal issues down the road.
 						</p>
 					</div>
@@ -113,18 +118,18 @@ function Services() {
 						<h3 className="headline-font text-xl text-cyan-400 py-4">Plugin Updates</h3>
 						<p className="max-w-[700px]">
 							WordPress websites need to be updated on a semi-frequent basis. Long outdated plugins can
-							break features and become a vulnurability for hacking. Often times updating plugins is
-							simple and easy. Sometimes it requires a deeper knowledge about what systems are effected
-							and how to recover if updates break.
+							break features and become a vulnurability for hacking. Oftentimes updating plugins is simple
+							and easy. Sometimes it requires a deeper knowledge about what systems are affected and how
+							to recover if updates break.
 						</p>
 					</div>
 					<div className="column-item px-2 lg:px-8">
 						<h3 className="headline-font text-xl text-cyan-400 py-4">Changing themes or structure</h3>
 						<p className="max-w-[700px]">
-							Many CMS platforms work off a theme framework that sets defaults for the website. Changing
-							themes can often mean having to make lots of little content adjustments to match the new
-							theme. Websites that have major structural changes should also be throughly tested again to
-							ensure that everything matchs up well and is working correctly.
+							Many CMS platforms work off of a theme framework that sets defaults for the website.
+							Changing themes can often mean having to make lots of little content adjustments to match
+							the new theme. Websites that have major structural changes should also be thoroughly tested
+							again to ensure that everything matches up well and is working correctly.
 						</p>
 					</div>
 				</div>
@@ -147,20 +152,22 @@ function Services() {
 						<h3 className="headline-font text-xl text-cyan-400 py-4">Info static websites</h3>
 						<p className="max-w-[700px]">
 							Most personal and small business websites provide content about who they are and what they
-							do. Often with links to contact them and reviews. This is considered a static website.
-							Static sites are simplier to setup and manage.
+							do. Often with links to contact them and reviews. This is considered a static website. There
+							are no moving parts with data. Static sites are simplier to setup and manage because of
+							their simplicity.
 						</p>
 					</div>
 					<div className="column-item px-2 lg:px-8">
 						<h3 className="headline-font text-xl text-cyan-400 py-4">Pros and cons of website builders</h3>
 						<p className="max-w-[700px]">
-							Website building platforms are not all of the same. Depending on your needs, you may want to
+							Website building platforms are not all the same. Depending on your needs, you may want to
 							choose one over another. I can give you a detailed breakdown of which platform would be a
-							best fit.
+							best fit based on your priorities. Choosing the right platform will save you time and
+							frustration in the long run.
 						</p>
 					</div>
 					<div className="column-item px-2 lg:px-8">
-						<h3 className="headline-font text-xl text-cyan-400 py-4">Hosting and domain names</h3>
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Hosting and Domain Names</h3>
 						<p className="max-w-[700px]">
 							There are many different hosting companies available. Website hosting options can become
 							confusing when integrating different services. Deciding on what and how to host a website

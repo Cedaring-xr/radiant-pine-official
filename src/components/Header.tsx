@@ -78,7 +78,7 @@ const Header = () => {
 					</h4>
 				</Link>
 			</div>
-			<nav className={`mb-16 mt-6 md:mr-24 lg:mr-24 xl:mr-48 z-100 ${stickyNav}`}>
+			<nav className={`mb-16 mt-6 md:mr-16 lg:mr-24 xl:mr-48 z-100 max-w-[1800px] ${stickyNav}`}>
 				{size.width < breakpoint ? (
 					<>
 						<HiMenu className={`text-5xl pink-accent ${stickyMobile}`} onClick={menuToggleOpen} />

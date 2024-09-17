@@ -21,7 +21,7 @@ const TypingText = () => {
 				]}
 				wrapper="span"
 				speed={60}
-				style={{ fontSize: '2em', display: 'inline-block', color: '#fff', textShadow: '2px 1px' }}
+				style={{ fontSize: '2em', display: 'inline-block', color: '#fff' }}
 				repeat={Infinity}
 			/>
 		</div>

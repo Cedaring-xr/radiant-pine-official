@@ -11,7 +11,7 @@ function Footer() {
 				className="bg-cover"
 			>
 				<div className="text-white pb-16 pt-[200px]">
-					<h4 className="flex justify-center p-2 headline-font md:text-2xl bg-stone-600 bg-opacity-80 w-[95%] max-w-[600px] mx-auto rounded-xl rounded-b-none">
+					<h4 className="flex justify-center p-2 headline-font md:text-xl bg-stone-600 bg-opacity-80 w-[95%] max-w-[600px] mx-auto rounded-xl rounded-b-none">
 						Send me a message for a free consultation meeting
 					</h4>
 					<div

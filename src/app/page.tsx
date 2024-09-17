@@ -16,7 +16,7 @@ export default function Home() {
 				className="w-full absolute h-[897px] bg-cover z-20"
 			></div>
 			<div className="z-20 flex flex-col md:flex-row mb-24 pt-64">
-				<div className=" serif-font p-4 md:w-[600px] max-w-[700px] flex items-center">
+				<div className=" serif-font p-4 mt-36 md:-mt-48 lg:-mt-36 lg:mr-[500px] md:w-[600px] max-w-[700px] flex items-center">
 					<TypingText></TypingText>
 				</div>
 			</div>
@@ -26,7 +26,7 @@ export default function Home() {
 				<div className="sm:mt-24 lg:mt-64">
 					<SideBarRight
 						text="I have 10+ years of experience developing web applications professionally as a coder and test engineer."
-						additionalText=" I have worked for companies of all different sizes and worked on several web platforms."
+						additionalText=" I have worked for companies of all different sizes and know how balance priorities and features."
 					/>
 				</div>
 				<SideBarLeft
@@ -42,7 +42,7 @@ export default function Home() {
 						<div className="border-2 border-[#c524a8] rounded-3xl h-[480px] sm:h-[420px] md:h-[420px] lg:h-[360px] w-[95%] max-w-[850px] absolute -top-2 left-5"></div>
 						<div className="border-2 border-[#c524a8] rounded-3xl h-[480px] sm:h-[420px] md:h-[420px] lg:h-[360px] w-[95%] max-w-[850px] absolute top-0 left-3"></div>
 						<div className="border-2 border-[#c524a8] rounded-3xl h-[480px] sm:h-[420px] md:h-[420px] lg:h-[360px] w-[95%] max-w-[850px] absolute top-2 left-1"></div>
-						<h2 className="serif-font text-white md:text-xl w-[85%] max-w-[800px] mt-8 ml-10">
+						<h2 className="serif-font text-white md:text-lg w-[85%] max-w-[800px] mt-8 ml-10">
 							Websites are a living document that need to be updated and changed periodically. It becomes
 							easy to put it off or delay making updates but this can become a serious problem if
 							something breaks and you do not know how to fix it. While website builder platforms make

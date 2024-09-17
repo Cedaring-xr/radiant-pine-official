@@ -50,7 +50,7 @@ const SideBarRight: React.FC<SideBarProps> = ({ text, additionalText, thirdText 
 			</svg>
 		</div>
 		<div className="absolute top-[42%] sm:top-[38%] md:top-[33%] right-0 z-30 flex justify-end max-w-[85%]">
-			<p className="text-white  md:text-xl serif-font mr-4 max-w-[600px]">
+			<p className="text-white  md:text-lg serif-font mr-4 max-w-[600px]">
 				{text}
 				<span className="invisible sm:visible">{additionalText}</span>
 				<span className="invisible md:visible">{thirdText}</span>

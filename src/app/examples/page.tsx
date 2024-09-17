@@ -10,24 +10,25 @@ function Examples() {
 	gsap.registerPlugin(ScrollTrigger)
 	useLayoutEffect(() => {
 		gsap.to('.glass', {
-			y: 1600,
+			y: 1800,
 			ease: 'none',
 			scrollTrigger: {
 				trigger: '#examples-mainContainer',
-				scrub: true
+				scrub: true,
+				start: 'top top'
 			}
 		})
 	}, [])
 	return (
-		<div id="examples-mainContainer" className="bg-[#0b0d15] w-full overflow-hidden">
+		<div id="examples-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/5a.png'})` }}
-				className="w-screen bg-cover bg-fixed"
+				className="bg-cover bg-fixed relative z-20"
 			>
-				<div id="main-box" className="h-[800px] flex justify-center items-top overflow-hidden">
+				<div id="main-box" className="h-[800px] flex justify-center items-center overflow-hidden">
 					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex justify-center items-center">
-						<h1 className="headline-font text-4xl blue ">Example Work</h1>
+						<h1 className="headline-font text-4xl blue p-2">Example Work</h1>
 					</div>
 				</div>
 			</div>
@@ -36,7 +37,7 @@ function Examples() {
 				<div id="line-break" className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
 					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
-						Squarespace websites
+						Squarespace Websites
 					</h3>
 					<Image
 						src="/images/circuitSVGsmall.png"
@@ -64,7 +65,7 @@ function Examples() {
 							functional website I use to test out and experiment with features of Squarespace.
 						</p>
 						<div className="w-[130px] text-black mx-auto mt-6">
-							<Button text="View" destination="/services"></Button>
+							<Button text="View" destination="https://radiantdiscs.com"></Button>
 						</div>
 					</div>
 				</div>
@@ -72,7 +73,7 @@ function Examples() {
 				<div id="line-break" className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
 					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
-						WordPress websites
+						WordPress Websites
 					</h3>
 					<Image
 						src="/images/circuitSVGsmall.png"
@@ -86,17 +87,18 @@ function Examples() {
 					<div className="grid-item lg:px-8 mb-48">
 						<h3 className="headline-font text-2xl text-white py-4">Coming Soon!</h3>
 						<p className="max-w-[400px]">
-							I am working on building a WordPress template website to experiment on and use as examples
+							I am working on building a WordPress template website to experiment with and use as
+							examples.
 						</p>
 						<div className="w-[130px] text-black relative float-end mr-24 mt-6 invisible">
-							<Button text="View" destination="/services"></Button>
+							<Button text="View" destination="/services" target="_blank"></Button>
 						</div>
 					</div>
 				</div>
 				<div id="line-break" className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
 					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
-						Custom built sites
+						Custom Built Sites
 					</h3>
 					<Image
 						src="/images/circuitSVGsmall.png"
@@ -145,7 +147,7 @@ function Examples() {
 						</div>
 						<p className="my-4 max-w-[400px]">
 							My custom coding portfolio website. Displays some of my programming related projects and
-							works in progress. Also has my resume on it.
+							works in progress. Also it has my resume on it.
 						</p>
 						<div className="w-[130px] text-black mx-auto mt-6">
 							<Button text="View" destination="https://www.mattraydev.com/" target="_blank"></Button>

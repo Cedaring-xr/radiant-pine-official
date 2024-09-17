@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useLayoutEffect } from 'react'
+import { useEffect } from 'react'
 import SideBarRight from '@/components/SideBarRight'
 import SideBarLeft from '@/components/SideBarLeft'
 import gsap from 'gsap'
@@ -11,13 +11,14 @@ import SVGcircuit2 from '@/components/SVGcircuit2'
 
 function About() {
 	gsap.registerPlugin(ScrollTrigger)
-	useLayoutEffect(() => {
+	useEffect(() => {
 		gsap.to('.glass', {
 			y: 1800,
 			ease: 'none',
 			scrollTrigger: {
 				trigger: '#about-mainContainer',
-				scrub: true
+				scrub: true,
+				start: 'top top'
 			}
 		})
 	}, [])
@@ -25,25 +26,25 @@ function About() {
 		<div id="about-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
-				style={{ backgroundImage: `url(${'/images/6.png'})` }}
+				style={{ backgroundImage: `url(${'/images/6a.png'})` }}
 				className="bg-cover bg-fixed z-20 relative"
 			>
-				<div id="main-box" className="h-[800px] flex justify-center items-top overflow-hidden">
-					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex justify-center items-center -mt-12">
+				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
+					<div className="w-[90%] md:w-[60%] h-[120px] md:h-[200px] glass rounded-3xl flex justify-center items-center">
 						<h1 className="headline-font text-4xl blue p-2">About Myself</h1>
 					</div>
 				</div>
 			</div>
 			<div className="pt-12 text-white">
 				<div className="max-w-[1100px] mx-auto">
-					<CenteredHighlight text="Hello! My name is Matt. Radiant Pine is my personal business" />
+					<CenteredHighlight text="Hello! My name is Matt. Radiant Pine is my personal business." />
 				</div>
 				<div className="w-full relative h-[3000px] overflow-hidden">
 					<div className="h-[100px]"></div>
 					<SideBarLeft
-						text="I have a professional background as a Quality Assurance Engineering working for several software companies."
+						text="I have a professional background as a Quality Assurance Engineer working for software companies in Colorado."
 						additionalText=" I live in Montrose, CO and primarily work with local based businesses."
-						thirdText=" I have spend years developing skills related to web development."
+						thirdText=" I have spent years developing skills related to web development."
 					></SideBarLeft>
 					<div id="image-trio-container" className="relative m-6 w-full min-w-[350px] max-w-[900px]">
 						{/* <div className="border-2 border-cyan-400 rounded-3xl absolute m-6 w-[58%] h-[87%] top-0 z-20"></div> */}
@@ -54,7 +55,7 @@ function About() {
 					<SideBarRight
 						text="I have a deep passion for quality, and try to extend that as much as possible into the work that I do."
 						additionalText=" Working as a QA Engineer helped me to refine a keen eye for details."
-						thirdText=" I understand the more technical aspects in building websites."
+						thirdText=" I understand the more technical and intricate aspects in building websites."
 					></SideBarRight>
 					<div className="h-[200px] md:h-[400px]"></div>
 					<SideBarLeft
