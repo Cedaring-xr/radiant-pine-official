@@ -69,7 +69,7 @@ export default function Home() {
 							<SVGcircuit2 />
 						</div>
 					</div>
-					<div className="h-[800px] w-[120vw] left-[10%] fixed top-[60vh] bg-[#0b0d15] -rotate-[15deg] background-shadow"></div>
+					<div className="h-[800px] w-[120vw] left-[5%] fixed top-[60vh] bg-[#0b0d15] -rotate-[15deg] background-shadow"></div>
 				</div>
 				<div className="relative">
 					<div
@@ -86,7 +86,7 @@ export default function Home() {
 								<SVGcircuit2 />
 							</div>
 						</div>
-						<div className="h-[800px] w-[120vw] left-[10%] fixed top-[60vh] bg-[#0b0d15] -rotate-[15deg] background-shadow"></div>
+						<div className="h-[800px] w-[120vw] left-[5%] fixed top-[60vh] bg-[#0b0d15] -rotate-[15deg] background-shadow"></div>
 					</div>
 				</div>
 			</div>
