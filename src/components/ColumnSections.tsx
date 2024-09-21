@@ -8,14 +8,14 @@ function ColumnSections() {
 	return (
 		<div className="bg-[#0b0d15] w-full min-h-[600px] text-white mt-12">
 			<div id="line-break" className="w-full flex justify-center">
-				<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
+				<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[30px]" />
 				<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[200px]">Services</h3>
 				<Image
 					src="/images/circuitSVGsmall.png"
 					alt=""
 					width={264}
 					height={34}
-					className="scale-x-[-1] max-h-[34px]"
+					className="scale-x-[-1] max-h-[30px]"
 				/>
 			</div>
 			<div className="flex flex-col md:mx-16 lg:mx-0 lg:flex-row justify-between lg:px-12">

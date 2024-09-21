@@ -12,6 +12,8 @@ import { MdDoubleArrow } from 'react-icons/md'
 
 function About() {
 	gsap.registerPlugin(ScrollTrigger)
+	ScrollTrigger.config({ ignoreMobileResize: true })
+
 	useLayoutEffect(() => {
 		gsap.to('.glass', {
 			y: 1500,
@@ -28,7 +30,7 @@ function About() {
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/6a.webp'})` }}
-				className="bg-cover bg-fixed z-20 relative h-[700px]"
+				className="bg-cover bg-fixed z-20 relative h-[700px] w-full"
 			>
 				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
 					<div className="w-[90%] md:w-[60%] h-[120px] md:h-[200px] glass rounded-3xl flex flex-col justify-center items-center">
