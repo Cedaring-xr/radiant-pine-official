@@ -56,7 +56,6 @@ const Header = () => {
 	const stickyTitle = isSticky && 'text-2xl lg:text-[2.1rem] pt-0'
 	const stickySubtitle = isSticky && 'hidden'
 	const stickyNav = isSticky && 'mt-0'
-	const stickyButton = isSticky && 'border-none'
 	const stickyMobile = isSticky && ''
 
 	return (
@@ -71,11 +70,11 @@ const Header = () => {
 					>
 						Radiant Pine LLC
 					</h1>
-					<h4
-						className={`text-white serif-font w-3/4 md:w-full lg:text-base mx-6 mt-2 serif-font ${stickySubtitle}`}
+					<h2
+						className={`text-white serif-font w-4/5 md:w-full lg:text-base mx-6 mt-2 serif-font ${stickySubtitle}`}
 					>
-						Freelance Web Developer
-					</h4>
+						Freelance Web Development
+					</h2>
 				</Link>
 			</div>
 			<nav className={`mb-16 mt-2 md:mr-16 lg:mr-24 xl:mr-48 z-100 max-w-[1800px] ${stickyNav}`}>
@@ -139,56 +138,46 @@ const Header = () => {
 				) : (
 					<ul className="flex flex-row gap-4 lg:gap-10 z-100 text-[#f03ccf] serif-font mt-2">
 						<li>
-							<button className={`${stickyButton}`}>
-								<a
-									href="/about"
-									className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
-								>
-									About
-								</a>
-							</button>
+							<Link
+								href="/about"
+								className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
+							>
+								About
+							</Link>
 						</li>
 						<li>
-							<button className={` ${stickyButton}`}>
-								<a
-									href="/services"
-									className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
-								>
-									Services
-								</a>
-							</button>
+							<Link
+								href="/services"
+								className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
+							>
+								Services
+							</Link>
 						</li>
 						<li>
-							<button className={`${stickyButton}`}>
-								<a
-									href="/examples"
-									className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
-								>
-									Examples
-								</a>
-							</button>
+							<Link
+								href="/examples"
+								className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
+							>
+								Examples
+							</Link>
 						</li>
 						<li>
-							<button className={` ${stickyButton}`}>
-								<a
-									href="https://www.radiantpine-devblog.com/"
-									rel="noreferrer"
-									target="_blank"
-									className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
-								>
-									Blog
-								</a>
-							</button>
+							<a
+								href="https://www.radiantpine-devblog.com/"
+								rel="noreferrer"
+								target="_blank"
+								className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
+							>
+								Blog
+							</a>
 						</li>
 						<li>
-							<button className={` ${stickyButton}`}>
-								<a
-									href="/faq"
-									className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
-								>
-									FAQ
-								</a>
-							</button>
+							<Link
+								href="/faq"
+								className="text-xl  font-sans font-bold uppercase decoration-zinc-900 hover:text-white"
+							>
+								FAQ
+							</Link>
 						</li>
 					</ul>
 				)}

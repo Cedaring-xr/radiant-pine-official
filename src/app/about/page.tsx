@@ -30,7 +30,7 @@ function About() {
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/6a.webp'})` }}
-				className="bg-cover bg-fixed z-20 relative h-[700px] w-full"
+				className="bg-cover bg-fixed z-20 absolute h-[700px] w-full"
 			>
 				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
 					<div className="w-[90%] md:w-[60%] h-[120px] md:h-[200px] glass rounded-3xl flex flex-col justify-center items-center">
@@ -39,6 +39,7 @@ function About() {
 					</div>
 				</div>
 			</div>
+			<div id="spacer" className="w-full h-[700px]"></div>
 			<div className="pt-12 text-white">
 				<div className="max-w-[1100px] mx-auto">
 					<CenteredHighlight text="Hello! My name is Matt. Radiant Pine is my personal business." />

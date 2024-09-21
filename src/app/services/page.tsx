@@ -27,7 +27,7 @@ function Services() {
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/16a.webp'})` }}
-				className="bg-cover bg-fixed relative z-20 h-[700px] w-full"
+				className="bg-cover bg-fixed absolute z-20 h-[700px] w-full"
 			>
 				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
 					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex flex-col justify-center items-center">
@@ -36,6 +36,7 @@ function Services() {
 					</div>
 				</div>
 			</div>
+			<div id="spacer" className="w-full h-[700px]"></div>
 			<div className="pt-48 text-white">
 				<div id="testing-section" className="flex justify-center">
 					<div className="mt-12 relative z-20 sm:mx-[4%] md:mx-[12%] lg:mx-[25%]">

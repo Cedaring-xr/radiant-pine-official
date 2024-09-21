@@ -27,8 +27,8 @@ function ColumnSections() {
 						Ultimately you own your website and content, I just build it out and provide maintenance if
 						needed.
 					</p>
-					<div className="w-[130px] text-black relative float-end mr-24 mt-6">
-						<Button text="More" destination="/services#guidance-section"></Button>
+					<div className="w-[140px] text-black relative float-end mr-24 mt-6">
+						<Button text="Build" destination="/services#guidance-section"></Button>
 					</div>
 				</div>
 				<div className="column-item lg:px-8 lg:w-[30%] mx-1">
@@ -40,8 +40,8 @@ function ColumnSections() {
 						website and layouts cutting off text and buttons. Without knowing what to improve, your website
 						might look unprofessional without you realizing it.
 					</p>
-					<div className="w-[130px] text-black relative float-end mr-24 mt-6">
-						<Button text="More" destination="/services#testing-section"></Button>
+					<div className="w-[150px] text-black relative float-end mr-24 mt-6">
+						<Button text="Testing" destination="/services#testing-section" />
 					</div>
 				</div>
 				<div className="column-item lg:px-8 lg:w-[30%] mx-1">
@@ -51,8 +51,8 @@ function ColumnSections() {
 						information and design is important. Having someone to quickly go in and make changes can save
 						you a lot of time and headache.
 					</p>
-					<div className="w-[130px] text-black relative float-end mr-24 mt-6">
-						<Button text="More" destination="/services#updates-section"></Button>
+					<div className="w-[160px] text-black relative float-end mr-24 mt-6">
+						<Button text="Udpates" destination="/services#updates-section" />
 					</div>
 				</div>
 			</div>
