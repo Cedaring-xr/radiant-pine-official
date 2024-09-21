@@ -25,7 +25,7 @@ function Services() {
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/16a.webp'})` }}
-				className="bg-cover bg-fixed relative z-20"
+				className="bg-cover bg-fixed relative z-20 h-[700px]"
 			>
 				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
 					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex flex-col justify-center items-center">
