@@ -5,13 +5,14 @@ import React, { useLayoutEffect } from 'react'
 import Image from 'next/image'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { MdDoubleArrow } from 'react-icons/md'
 
 function Services() {
 	gsap.registerPlugin(ScrollTrigger)
 	useLayoutEffect(() => {
 		gsap.to('.glass', {
-			y: 1800,
-			ease: 'none',
+			y: 1150,
+			ease: 'power1',
 			scrollTrigger: {
 				trigger: '#services-mainContainer',
 				scrub: true,
@@ -23,12 +24,13 @@ function Services() {
 		<div id="services-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
-				style={{ backgroundImage: `url(${'/images/16a.png'})` }}
+				style={{ backgroundImage: `url(${'/images/16a.webp'})` }}
 				className="bg-cover bg-fixed relative z-20"
 			>
-				<div id="main-box" className="h-[800px] flex justify-center items-center overflow-hidden">
-					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex justify-center items-center">
+				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
+					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex flex-col justify-center items-center">
 						<h1 className="headline-font text-4xl blue p-2">Services</h1>
+						<MdDoubleArrow className={`text-4xl sm:mx-4 text-[#c524a8] rotate-90 mt-4`} />
 					</div>
 				</div>
 			</div>

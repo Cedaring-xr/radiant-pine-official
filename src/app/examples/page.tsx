@@ -5,13 +5,14 @@ import Button from '@/components/Button'
 import { useLayoutEffect } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger'
+import { MdDoubleArrow } from 'react-icons/md'
 
 function Examples() {
 	gsap.registerPlugin(ScrollTrigger)
 	useLayoutEffect(() => {
 		gsap.to('.glass', {
-			y: 1800,
-			ease: 'none',
+			y: 1200,
+			ease: 'power1',
 			scrollTrigger: {
 				trigger: '#examples-mainContainer',
 				scrub: true,
@@ -23,12 +24,13 @@ function Examples() {
 		<div id="examples-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
-				style={{ backgroundImage: `url(${'/images/5a.png'})` }}
+				style={{ backgroundImage: `url(${'/images/5a.webp'})` }}
 				className="bg-cover bg-fixed relative z-20"
 			>
-				<div id="main-box" className="h-[800px] flex justify-center items-center overflow-hidden">
-					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex justify-center items-center">
-						<h1 className="headline-font text-4xl blue p-2">Example Work</h1>
+				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
+					<div className="w-[90%] md:w-[60%] h-[150px] md:h-[200px] glass rounded-2xl flex flex-col justify-center items-center">
+						<h1 className="headline-font text-4xl blue p-2">Sample Work</h1>
+						<MdDoubleArrow className={`text-4xl sm:mx-4 text-[#c524a8] rotate-90 mt-4`} />
 					</div>
 				</div>
 			</div>
@@ -113,7 +115,7 @@ function Examples() {
 						<h3 className="headline-font text-2xl text-cyan-400 py-4">Elevation Weather App</h3>
 						<div>
 							<Image
-								src="/images/EW1.png"
+								src="/images/EW1.webp"
 								alt=""
 								width={320}
 								height={300}
@@ -157,7 +159,7 @@ function Examples() {
 						<h3 className="headline-font text-2xl text-cyan-400 py-4">Cedaring Art Showcase</h3>
 						<div>
 							<Image
-								src="/images/Art1.png"
+								src="/images/Art1.webp"
 								alt=""
 								width={320}
 								height={300}

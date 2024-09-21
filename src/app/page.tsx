@@ -12,30 +12,33 @@ export default function Home() {
 		<main className="flex min-h-screen flex-col items-center justify-between overflow-hidden bg-[#0b0d15]">
 			<div
 				id="image-container"
-				style={{ backgroundImage: `url(${'/images/mtnBackground.png'})` }}
+				style={{ backgroundImage: `url(${'/images/mtnBackground.webp'})` }}
 				className="w-full absolute h-[897px] bg-cover z-20"
 			></div>
 			<div className="z-20 flex flex-col md:flex-row mb-24 pt-64">
-				<div className=" serif-font p-4 mt-36 md:-mt-48 lg:-mt-36 lg:mr-[500px] md:w-[600px] max-w-[700px] flex items-center">
+				<div className=" serif-font p-4 mt-24 lg:-mt-24 lg:mr-[500px] md:w-[600px] max-w-[700px] flex items-center">
 					<TypingText></TypingText>
 				</div>
 			</div>
 			<div className="lg:h-[300px]"></div>
-			<CenteredHighlight text="Independent Web development consultant" />
+			<CenteredHighlight text="Freelance Web Developer and Consultant" />
 			<div className="w-full relative h-[2200px]">
 				<div className="sm:mt-24 lg:mt-64">
 					<SideBarRight
 						text="I have 10+ years of experience developing web applications professionally as a coder and test engineer."
 						additionalText=" I have worked for companies of all different sizes and know how balance priorities and features."
+						thirdText=" I am bringing my skillset and knowledge to freelance development."
 					/>
 				</div>
 				<SideBarLeft
-					text="This business was born out of a love for websites and a strive for building quality products."
-					additionalText="I love helping local businesses and want to elevate small business websites to be better."
+					text="This business was born out of a love for websites and a desire for building quality products."
+					additionalText=" I hope help out members of the local community and small businesses."
+					thirdText=" I provide an in-depth experience to ensure that you get the "
 				/>
 				<SideBarRight
-					text="I work on websites that were not professionally developed and managed by a web design studio."
-					additionalText=" If you have tried to build a website but want additional help let me know."
+					text="I work on all sort of different website and CMS platforms such as WordPress, Squarespace, Wix, Webflow and others."
+					additionalText=" If you have built a website for your business but want additional help let me know."
+					thirdText=" If you want a website re-design or migration to a different platform, then I can do that as well."
 				/>
 				<div className="mt-12 relative z-20 sm:mx-[4%] md:mx-[12%] lg:mx-[25%]">
 					<div id="pink-box-container" className="relative flex justify-start">
@@ -48,7 +51,7 @@ export default function Home() {
 							something breaks and you do not know how to fix it. While website builder platforms make
 							things easier, 90% of users do not know how to get the most out of the platform they are
 							using. Having a deep background in web development allows me to leverage the full potential
-							of CMS platforms and build a higher quality website.
+							of website builder platforms and produce a higher quality end result.
 						</h2>
 					</div>
 				</div>
@@ -83,7 +86,7 @@ export default function Home() {
 								<SVGcircuit2 />
 							</div>
 						</div>
-						<div className="h-[800px] w-[120vw] left-[-10%] fixed top-[60vh] bg-[#0b0d15] -rotate-[15deg] background-shadow"></div>
+						<div className="h-[800px] w-[120vw] left-[10%] fixed top-[60vh] bg-[#0b0d15] -rotate-[15deg] background-shadow"></div>
 					</div>
 				</div>
 			</div>

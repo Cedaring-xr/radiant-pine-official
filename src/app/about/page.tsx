@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import SideBarRight from '@/components/SideBarRight'
 import SideBarLeft from '@/components/SideBarLeft'
 import gsap from 'gsap'
@@ -8,13 +8,14 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger'
 import Image from 'next/image'
 import CenteredHighlight from '@/components/CenteredHighlight'
 import SVGcircuit2 from '@/components/SVGcircuit2'
+import { MdDoubleArrow } from 'react-icons/md'
 
 function About() {
 	gsap.registerPlugin(ScrollTrigger)
-	useEffect(() => {
+	useLayoutEffect(() => {
 		gsap.to('.glass', {
-			y: 1800,
-			ease: 'none',
+			y: 1500,
+			ease: 'power1',
 			scrollTrigger: {
 				trigger: '#about-mainContainer',
 				scrub: true,
@@ -26,12 +27,13 @@ function About() {
 		<div id="about-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
-				style={{ backgroundImage: `url(${'/images/6a.png'})` }}
-				className="bg-cover bg-fixed w-screen h-[670px] z-20 relative"
+				style={{ backgroundImage: `url(${'/images/6a.webp'})` }}
+				className="bg-cover bg-fixed z-20 relative"
 			>
 				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
-					<div className="w-[90%] md:w-[60%] h-[120px] md:h-[200px] glass rounded-3xl flex justify-center items-center">
+					<div className="w-[90%] md:w-[60%] h-[120px] md:h-[200px] glass rounded-3xl flex flex-col justify-center items-center">
 						<h1 className="headline-font text-4xl blue p-2">About Myself</h1>
+						<MdDoubleArrow className={`text-4xl sm:mx-4 text-[#c524a8] rotate-90 mt-4`} />
 					</div>
 				</div>
 			</div>
@@ -49,7 +51,12 @@ function About() {
 					<div id="image-trio-container" className="relative m-6 w-full min-w-[350px] max-w-[900px]">
 						{/* <div className="border-2 border-cyan-400 rounded-3xl absolute m-6 w-[58%] h-[87%] top-0 z-20"></div> */}
 						<div className="mr-8 relative z-40">
-							<Image src="/images/imageTrio.png" alt="" width={600} height={500}></Image>
+							<Image
+								src="/images/imageTrio.webp"
+								alt="collection of 3 images of myself"
+								width={600}
+								height={500}
+							></Image>
 						</div>
 					</div>
 					<SideBarRight
@@ -65,8 +72,8 @@ function About() {
 					></SideBarLeft>
 					<div className="flex w-[95%] justify-center md:justify-start relative z-20">
 						<Image
-							src="/images/selfWithDog.jpg"
-							alt=""
+							src="/images/selfWithDog.webp"
+							alt="myself with my dog"
 							width={300}
 							height={600}
 							className="rounded-3xl sm:m-4"

@@ -4,8 +4,6 @@ import './globals.css'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
 	title: 'Radiant Pine LLC',
 	description: 'Website consultant and web development assistance'
@@ -18,7 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="bg-stone-700">
-			<body className={inter.className}>
+			<body className="mt-[-60px]">
 				<Header />
 				{children}
 				<Footer />

@@ -7,7 +7,7 @@ function Footer() {
 		<div className="bg-[#0b0d15] z-30 relative">
 			<div
 				id="bottomImage"
-				style={{ backgroundImage: `url(${'/images/blueBorder16-9.png'})` }}
+				style={{ backgroundImage: `url(${'/images/blueBorder16-9.webp'})` }}
 				className="bg-cover"
 			>
 				<div className="text-white pb-16 pt-[200px]">

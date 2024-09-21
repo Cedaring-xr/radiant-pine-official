@@ -52,33 +52,33 @@ const Header = () => {
 	}, [size.width])
 
 	const stickyHeader =
-		isSticky && 'sticky bg-[#000101] transition ease-in-out duration-500 z-30 bg-opacity-90 main-box-shadow'
-	const stickyTitle = isSticky && 'text-white text-2xl lg:text-[2.1rem] -mt-[6px] pt-0'
+		isSticky && 'sticky top-[0px] bg-[#000101] transition ease-in-out z-30 bg-opacity-90 main-box-shadow'
+	const stickyTitle = isSticky && 'text-2xl lg:text-[2.1rem] pt-0'
 	const stickySubtitle = isSticky && 'hidden'
 	const stickyNav = isSticky && 'mt-0'
 	const stickyButton = isSticky && 'border-none'
-	const stickyMobile = isSticky && 'md:-mr-24'
+	const stickyMobile = isSticky && ''
 
 	return (
 		<div
 			id="header-container"
-			className={`transparent flex flex-row z-50 justify-between h-[60px] w-full sans-font absolute top-0 ${stickyHeader}`}
+			className={`transparent flex flex-row z-50 justify-between h-[60px] w-full sans-font relative bottom-[-60px]  ${stickyHeader}`}
 		>
-			<div className="min-w-[250px] flex items-center">
+			<div className="min-w-[250px] flex items-center pt-2">
 				<Link href="/">
 					<h1
-						className={`text-2xl sm:text-3xl md:text-3xl lg:text-4xl headline-font text-white mt-8 ml-6 ${stickyTitle}`}
+						className={`text-2xl sm:text-3xl md:text-3xl lg:text-4xl headline-font text-white mt-4 ml-6 ${stickyTitle}`}
 					>
 						Radiant Pine LLC
 					</h1>
 					<h4
-						className={`text-white serif-font w-2/3 md:w-full lg:text-base mx-6 mt-2 serif-font ${stickySubtitle}`}
+						className={`text-white serif-font w-3/4 md:w-full lg:text-base mx-6 mt-2 serif-font ${stickySubtitle}`}
 					>
-						Website consultant & developer
+						Freelance Web Developer
 					</h4>
 				</Link>
 			</div>
-			<nav className={`mb-16 mt-6 md:mr-16 lg:mr-24 xl:mr-48 z-100 max-w-[1800px] ${stickyNav}`}>
+			<nav className={`mb-16 mt-2 md:mr-16 lg:mr-24 xl:mr-48 z-100 max-w-[1800px] ${stickyNav}`}>
 				{size.width < breakpoint ? (
 					<>
 						<HiMenu className={`text-5xl pink-accent ${stickyMobile}`} onClick={menuToggleOpen} />
@@ -89,7 +89,9 @@ const Header = () => {
 									style={{ backgroundImage: `url(${'/images/mobileBackground.png'})` }}
 								>
 									<h1 className={`text-3xl text-[#89f7fe] headline-font ml-2 max-w-[400px]`}>
-										<Link href="/">Radiant Pine LLC</Link>
+										<Link href="/" onClick={menuToggleOpen}>
+											Radiant Pine LLC
+										</Link>
 									</h1>
 									<ul className="flex flex-col justify-center items-center text-4xl gap-8 mt-8  headline-font">
 										<li>
@@ -135,7 +137,7 @@ const Header = () => {
 						)}
 					</>
 				) : (
-					<ul className="flex flex-row gap-4 lg:gap-10 z-100 text-[#c524a8] serif-font">
+					<ul className="flex flex-row gap-4 lg:gap-10 z-100 text-[#f03ccf] serif-font mt-2">
 						<li>
 							<button className={`${stickyButton}`}>
 								<a
