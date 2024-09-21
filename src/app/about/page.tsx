@@ -13,7 +13,6 @@ import { MdDoubleArrow } from 'react-icons/md'
 function About() {
 	gsap.registerPlugin(ScrollTrigger)
 	ScrollTrigger.config({ ignoreMobileResize: true })
-	ScrollTrigger.normalizeScroll(true)
 	useLayoutEffect(() => {
 		gsap.to('.glass', {
 			y: 1500,
