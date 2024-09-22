@@ -21,7 +21,7 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="lg:h-[300px]"></div>
-			<CenteredHighlight text="Freelance Web Developer and Consultant based out of Montrose, Colorado" />
+			<CenteredHighlight text="Freelance Web Developer based out of Montrose, Colorado" />
 			<div className="w-full relative h-[2200px]">
 				<div className="sm:mt-24 lg:mt-64">
 					<SideBarRight
