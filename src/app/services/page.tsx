@@ -54,7 +54,7 @@ function Services() {
 				<div className="w-full flex justify-center items-center mb-16 mt-24 md:mt-48">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
 					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[300px]">
-						Website Testing
+						New Build
 					</h3>
 					<Image
 						src="/images/circuitSVGsmall.png"
@@ -66,33 +66,29 @@ function Services() {
 				</div>
 				<div className="flex flex-col lg:flex-row justify-between lg:px-12">
 					<div className="column-item px-2 lg:px-8">
-						<h3 className="headline-font text-xl text-cyan-400 py-4">Website Audit</h3>
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Static Websites</h3>
 						<p className="max-w-[700px]">
-							A detailed breakdown document on what bugs, UI/UX issues, or navigation issues you may have
-							with your website. Testing across multiple browsers, screen sizes, and devices. If you have
-							only viewed your website on 1 computer or phone then you might not know if it looks bad on
-							other devices. Identifying potential pain points helps to avoid negative impressions on your
-							business.
+							Most personal and small business websites provide content about who they are and what they
+							do. Often with links to contact them and reviews. This is considered a static website. There
+							are no moving parts with data. Static sites are simplier to setup and manage because of
+							their simplicity.
 						</p>
 					</div>
 					<div className="column-item px-2 lg:px-8">
-						<h3 className="headline-font text-xl text-cyan-400 py-4">Performance Testing</h3>
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Pros & Cons of website builders</h3>
 						<p className="max-w-[700px]">
-							How does your website function under a slower connection? What order does content load in to
-							the page? Do background videos load in a acceptable timeframe? Performance testing
-							identifies any issues with content and layout appearing on the page. Ensuring your customers
-							have a smooth and enjoyable experience navigating content on your website even on slow or
-							mobile connections speeds is important.
+							Website building platforms are not all the same. Depending on your needs, you may want to
+							choose one over another. I can give you a detailed breakdown of which platform would be a
+							best fit based on your priorities. Choosing the right platform will save you time and
+							frustration in the long run.
 						</p>
 					</div>
 					<div className="column-item px-2 lg:px-8">
-						<h3 className="headline-font text-xl text-cyan-400 py-4">Accessibility Audit</h3>
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Hosting and Domain Names</h3>
 						<p className="max-w-[700px]">
-							Accessibility refers to the ability to navigate and use a website by persons with
-							disabilities. ADA (American Disability Act) applies to online businesses as well as physical
-							locations. There are various guidelines to adhering to ADA compliance when building a
-							website. Websites available as public services or affiliated with city/government that are
-							not accessible could be subject to legal issues down the road.
+							There are many different hosting companies available. Website hosting options can become
+							confusing when integrating different services. Deciding on what and how to host a website
+							can be the difference between paying $100/mo and $15/mo.
 						</p>
 					</div>
 				</div>
@@ -142,7 +138,7 @@ function Services() {
 				<div className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
 					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[300px]">
-						Guidance on Setup
+						Website Testing
 					</h3>
 					<Image
 						src="/images/circuitSVGsmall.png"
@@ -154,29 +150,33 @@ function Services() {
 				</div>
 				<div className="flex flex-col lg:flex-row justify-between lg:px-12">
 					<div className="column-item px-2 lg:px-8">
-						<h3 className="headline-font text-xl text-cyan-400 py-4">Info static websites</h3>
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Website Audit</h3>
 						<p className="max-w-[700px]">
-							Most personal and small business websites provide content about who they are and what they
-							do. Often with links to contact them and reviews. This is considered a static website. There
-							are no moving parts with data. Static sites are simplier to setup and manage because of
-							their simplicity.
+							A detailed breakdown document on what bugs, UI/UX issues, or navigation issues you may have
+							with your website. Testing across multiple browsers, screen sizes, and devices. If you have
+							only viewed your website on 1 computer or phone then you might not know if it looks bad on
+							other devices. Identifying potential pain points helps to avoid negative impressions on your
+							business.
 						</p>
 					</div>
 					<div className="column-item px-2 lg:px-8">
-						<h3 className="headline-font text-xl text-cyan-400 py-4">Pros and cons of website builders</h3>
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Performance Testing</h3>
 						<p className="max-w-[700px]">
-							Website building platforms are not all the same. Depending on your needs, you may want to
-							choose one over another. I can give you a detailed breakdown of which platform would be a
-							best fit based on your priorities. Choosing the right platform will save you time and
-							frustration in the long run.
+							How does your website function under a slower connection? What order does content load in to
+							the page? Do background videos load in a acceptable timeframe? Performance testing
+							identifies any issues with content and layout appearing on the page. Ensuring your customers
+							have a smooth and enjoyable experience navigating content on your website even on slow or
+							mobile connections speeds is important.
 						</p>
 					</div>
 					<div className="column-item px-2 lg:px-8">
-						<h3 className="headline-font text-xl text-cyan-400 py-4">Hosting and Domain Names</h3>
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Accessibility Audit</h3>
 						<p className="max-w-[700px]">
-							There are many different hosting companies available. Website hosting options can become
-							confusing when integrating different services. Deciding on what and how to host a website
-							can be the difference between paying $100/mo and $15/mo.
+							Accessibility refers to the ability to navigate and use a website by persons with
+							disabilities. ADA (American Disability Act) applies to online businesses as well as physical
+							locations. There are various guidelines to adhering to ADA compliance when building a
+							website. Websites available as public services or affiliated with city/government that are
+							not accessible could be subject to legal issues down the road.
 						</p>
 					</div>
 				</div>

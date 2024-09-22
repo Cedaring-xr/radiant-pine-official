@@ -23,7 +23,7 @@ function Footer() {
 				</div>
 				<div className="w-full overflow-hidden flex justify-between p-2 pb-0 text-white headline-font text-xs md:text-base">
 					<span className="hover:text-[#c524a8]">
-						<a href="/website">About this site</a>
+						<a href=""></a>
 					</span>
 					<span>Radiant Pine &copy; 2024</span>
 					<div id="social-icons" className="text-pink-400 text-xl">
