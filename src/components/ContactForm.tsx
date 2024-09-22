@@ -20,6 +20,7 @@ const Contact: FC = () => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)}>
+			<h2 className="flex justify-center text-xl serif-font text-cyan-400">office@radiantpine.com</h2>
 			<div className="my-2">
 				<label htmlFor="name" className="mb-2 block text-base font-medium">
 					Name

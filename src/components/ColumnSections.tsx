@@ -52,7 +52,7 @@ function ColumnSections() {
 						you a lot of time and headache.
 					</p>
 					<div className="w-[160px] text-black relative float-end mr-24 mt-6">
-						<Button text="Udpates" destination="/services#updates-section" />
+						<Button text="Updates" destination="/services#updates-section" />
 					</div>
 				</div>
 			</div>

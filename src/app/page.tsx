@@ -21,22 +21,22 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="lg:h-[300px]"></div>
-			<CenteredHighlight text="Freelance Web Developer and Consultant" />
+			<CenteredHighlight text="Freelance Web Developer and Consultant based out of Montrose, Colorado" />
 			<div className="w-full relative h-[2200px]">
 				<div className="sm:mt-24 lg:mt-64">
 					<SideBarRight
 						text="I have 10+ years of experience developing web applications professionally as a coder and test engineer."
-						additionalText=" I have worked for companies of all different sizes and know how balance priorities and features."
-						thirdText=" I am bringing my skillset and knowledge to freelance development."
+						additionalText=" I have worked for companies of all different sizes and know how balance priorities and time."
+						thirdText=" I am bringing my skillset and knowledge to freelance web development. Get in contact with me at office@radiantpine.com"
 					/>
 				</div>
 				<SideBarLeft
 					text="This business was born out of a love for websites and a desire for building quality products."
-					additionalText=" I hope help out members of the local community and small businesses."
-					thirdText=" I provide an in-depth experience to ensure that you get the "
+					additionalText=" I hope help out members of the local community and small businesses around the western slope of Colorado."
+					thirdText=" I provide an in-depth experience to ensure that you get a professional result."
 				/>
 				<SideBarRight
-					text="I work on all sort of different website and CMS platforms such as WordPress, Squarespace, Wix, Webflow and others."
+					text="I work on all sort of different website and CMS platforms such as WordPress, Squarespace, Wix, Webflow."
 					additionalText=" If you have built a website for your business but want additional help let me know."
 					thirdText=" If you want a website re-design or migration to a different platform, then I can do that as well."
 				/>
@@ -45,7 +45,7 @@ export default function Home() {
 						<div className="border-2 border-[#c524a8] rounded-3xl h-[480px] sm:h-[420px] md:h-[420px] lg:h-[360px] w-[95%] max-w-[850px] absolute -top-2 left-5"></div>
 						<div className="border-2 border-[#c524a8] rounded-3xl h-[480px] sm:h-[420px] md:h-[420px] lg:h-[360px] w-[95%] max-w-[850px] absolute top-0 left-3"></div>
 						<div className="border-2 border-[#c524a8] rounded-3xl h-[480px] sm:h-[420px] md:h-[420px] lg:h-[360px] w-[95%] max-w-[850px] absolute top-2 left-1"></div>
-						<h2 className="serif-font text-white md:text-lg w-[85%] max-w-[800px] mt-8 ml-10">
+						<h2 className="serif-font text-white md:text-lg w-[85%] max-w-[800px] mt-8 ml-8 md:ml-10">
 							Websites are a living document that need to be updated and changed periodically. It becomes
 							easy to put it off or delay making updates but this can become a serious problem if
 							something breaks and you do not know how to fix it. While website builder platforms make
