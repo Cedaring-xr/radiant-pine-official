@@ -12,7 +12,7 @@ function Footer() {
 			>
 				<div className="text-white pb-16 pt-[200px]">
 					<h4 className="flex justify-center p-2 headline-font md:text-xl bg-stone-900 bg-opacity-95 w-[95%] max-w-[600px] mx-auto rounded-xl rounded-b-none">
-						Send me a message for a free consultation meeting
+						Send me a message to set up a free consultation meeting
 					</h4>
 					<div
 						id="form-wrapper"
