@@ -38,7 +38,7 @@ function Services() {
 			</div>
 			<div id="spacer" className="w-full h-[700px]"></div>
 			<div className="pt-48 text-white">
-				<div id="testing-section" className="flex justify-center">
+				<div id="guidance-section" className="flex justify-center">
 					<div className="mt-12 relative z-20 sm:mx-[4%] md:mx-[12%] lg:mx-[25%]">
 						<div id="pink-box-container" className="relative flex justify-start">
 							<div className="border-2 border-[#c524a8] rounded-3xl h-[150px] w-[95%] max-w-[850px] absolute -top-2 left-5"></div>
@@ -134,7 +134,7 @@ function Services() {
 						</p>
 					</div>
 				</div>
-				<div id="guidance-section" className="w-full h-[200px]"></div>
+				<div id="testing-section" className="w-full h-[200px]"></div>
 				<div className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
 					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[300px]">
@@ -180,7 +180,50 @@ function Services() {
 						</p>
 					</div>
 				</div>
-				<div id="guidance-section" className="w-full h-[300px]"></div>
+				<div id="other-section" className="w-full h-[200px]"></div>
+				<div className="w-full flex justify-center items-center mb-16">
+					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
+					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[300px]">Other</h3>
+					<Image
+						src="/images/circuitSVGsmall.png"
+						alt=""
+						width={264}
+						height={34}
+						className="scale-x-[-1] max-h-[34px]"
+					/>
+				</div>
+				<div className="flex flex-col lg:flex-row justify-between lg:px-12">
+					<div className="column-item px-2 lg:px-8">
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Email Signatures</h3>
+						<p className="max-w-[700px]">
+							Custom built HTML email signatures. Signatures are the snippet at the bottom of emails that
+							typically shows logo and contact information. They help to make business emails look more
+							professional. Building email signatures using HTML ensures that the formatting is consistent
+							across many different email clients and devices. It also allows for more customization with
+							images, fonts, and effects. I test all of my email signatures across the most popular email
+							clients to make sure that they always look good.
+						</p>
+					</div>
+					<div className="column-item px-2 lg:px-8">
+						<h3 className="headline-font text-xl text-cyan-400 py-4">Email templates</h3>
+						<p className="max-w-[700px]">
+							Custom built HTML email templates. Templates are commonly used for marketing campaigns and
+							newsletter type information. Building email templates using HTML ensures that the formatting
+							is consistent across many different email clients and devices. I test all of my email
+							templates across the most popular email clients to make sure that they always look good.
+						</p>
+					</div>
+					<div className="column-item px-2 lg:px-8">
+						<h3 className="headline-font text-xl text-cyan-400 py-4">AWS Cloud Services</h3>
+						<p className="max-w-[700px]">
+							Amazon Web Services is a cloud service provider that offers many different solutions for
+							web-based software and cloud computing related tasks. I have multiple certifications from
+							AWS and use their services on my own projects. If you have AWS related issues or are
+							interested in using their services, let me know.
+						</p>
+					</div>
+				</div>
+				<div id="" className="w-full h-[300px]"></div>
 			</div>
 		</div>
 	)

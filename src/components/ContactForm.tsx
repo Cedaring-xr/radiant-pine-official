@@ -28,7 +28,7 @@ const Contact: FC = () => {
 					<h3 className="mx-4 serif-font text-xl">
 						<span className="font-bold">Thank you for your interest! </span>
 						<br />
-						Your message has been sent and I will respond by email as soon as I am able.
+						Your message has been recieved and I will respond by email as soon as I am able.
 					</h3>
 				</div>
 			) : (
