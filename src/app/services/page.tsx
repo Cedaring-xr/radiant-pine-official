@@ -26,7 +26,7 @@ function Services() {
 		<div id="services-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
-				style={{ backgroundImage: `url(${'/images/16a.webp'})` }}
+				style={{ backgroundImage: `url(${'/images/mtnTrianglesBackground.webp'})` }}
 				className="bg-cover absolute z-20 h-[700px] w-full"
 			>
 				<div id="main-box" className="h-[700px] flex justify-center items-center overflow-hidden">
