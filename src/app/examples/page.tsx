@@ -174,7 +174,7 @@ function Examples() {
 							learning experience with 3D effects.
 						</p>
 						<div className="w-[130px] text-black mx-auto mt-6">
-							<Button text="View" destination="https://cedaringvrart.com/" target="_blank"></Button>
+							<Button text="View" destination="http://cedaringvrart.com/" target="_blank"></Button>
 						</div>
 					</div>
 				</div>
