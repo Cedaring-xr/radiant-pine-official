@@ -51,17 +51,21 @@ export default function AccordionTemplate() {
 						There are many hosting options that vary in what they offer. Some try to bundle domains,
 						hosting, and build tools together in order to streamline the process. This is not always the
 						best idea. I prefer hosting options that allow for the most flexibility. These are often cheaper
-						as they do not lock you into extra tools that are not used.
+						as they do not lock you into extra tools that are not used. I use AWS for hosting all of my
+						personal websites.
 					</p>
 					<h4 className="question">How much should you be paying for a new website?</h4>
 					<p>
-						Website prices vary quite a lot. Average prices end up around $20 - $50 per month. Extra
-						features and support options can quickly raise prices.
+						Website prices vary quite a lot. Average prices end up around $20 - $50 per month for a business
+						website. Extra features and support options can quickly raise prices. Websites that are built
+						from scratch and self hosted are significantly cheaper compared to using a CMS service.
 					</p>
 					<h4 className="question">Should you hire a designer/developer to build your website?</h4>
 					<p>
-						If you have the budget and do not want to be as involved with a website then yes hiring a
-						developer is a good idea. You will get a more professional experience and end result.
+						If you have the budget and do not want to be as involved with the website, then yes hiring a
+						designer/developer is a good idea. You will get a more professional experience and better end
+						result. A web designer is more visual focused, whereas a web developer is more focused on
+						functionality and advanced features.
 					</p>
 				</AccordionItemPanel>
 			</AccordionItem>
@@ -85,16 +89,18 @@ export default function AccordionTemplate() {
 					</AccordionItemButton>
 				</AccordionItemHeading>
 				<AccordionItemPanel className="md:mx-16 max-w-[1200px]">
-					<h4 className="question">How to assess if your website needs updates or improvements</h4>
+					<h4 className="question">How to assess if your website needs updates or improvements?</h4>
 					<p>
 						Through thoroughly testing the website. If you do not know where things are broken or what
-						content is wrong then you will not know if you need updates.
+						content is wrong then you will not know if you need updates. Also if your website has not been
+						updated in several years, then it might be time to consider a rework.
 					</p>
 					<h4 className="question">How often should a website be updated?</h4>
 					<p>
 						It mostly depends on the type of website. Ones that have an event schedule or time based content
 						will need updates more frequently. Even static website should be updated about twice a year.
-						This ensures that the content is accurate as well as helps search engines to rank higher.
+						This ensures that the content is accurate as well as helps search engines to rank higher on the
+						list.
 					</p>
 					<h4 className="question">How can I change website themes?</h4>
 					<p>
@@ -106,7 +112,7 @@ export default function AccordionTemplate() {
 					<p>
 						A website re-build is a lengthy process. Most of the time it is better to try and improve a
 						current version. If the website was built incorrectly the first time or becomes hard to manage
-						without breaking then a re-build could be considered.
+						without breaking then a re-build could be advised.
 					</p>
 				</AccordionItemPanel>
 			</AccordionItem>
@@ -141,7 +147,8 @@ export default function AccordionTemplate() {
 					</h4>
 					<p>
 						Short answer is no. Most domain registration companies will let you use the domain name with a
-						variety of website hosting platforms.
+						variety of website hosting platforms. Buying a domain name from the same platform in which you
+						are building the website can make managing things easier though.
 					</p>
 				</AccordionItemPanel>
 			</AccordionItem>
@@ -168,12 +175,17 @@ export default function AccordionTemplate() {
 					<h4 className="question">What is SEO?</h4>
 					<p>
 						SEO stands for search engine optimization. This refers to how a website is listed when users
-						perform searches through Google or other search engines.
+						perform searches through Google or other search engines. There are many factors that go into how
+						rankings are calculated.
 					</p>
 					<h4 className="question">How can I improve SEO for my website?</h4>
 					<p>
-						SEO stands for search engine optimization. This refers to how a website is listed when users
-						perform searches through Google or other search engines.
+						SEO rankings can become quite complicated when first diving into it. In general, registering a
+						business location, having a functional current website and other social platform accounts, not
+						having any broken links or missing business information, and having more longevity of the
+						business can all help to rank higher in searches regardless of which search engine that
+						customers are using. Some business prefer to rank lower on searches until they are ready to
+						aquire more customers or advertise more.
 					</p>
 				</AccordionItemPanel>
 			</AccordionItem>

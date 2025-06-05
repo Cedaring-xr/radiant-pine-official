@@ -25,7 +25,7 @@ function Footer() {
 					<span className="hover:text-[#c524a8]">
 						<a href=""></a>
 					</span>
-					<span>Radiant Pine &copy; 2024</span>
+					<span>Radiant Pine &copy; 2025</span>
 					<div id="social-icons" className="text-pink-400 text-xl">
 						<SlSocialGoogle />
 					</div>

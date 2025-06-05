@@ -38,41 +38,7 @@ function Examples() {
 			<div id="spacer" className="w-full h-[700px]"></div>
 			<div className="pt-24 text-white z-20">
 				<div className="w-full h-[200px]"></div>
-				<div id="line-break" className="w-full flex justify-center items-center mb-16">
-					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
-					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
-						Squarespace Websites
-					</h3>
-					<Image
-						src="/images/circuitSVGsmall.png"
-						alt=""
-						width={264}
-						height={34}
-						className="scale-x-[-1] max-h-[34px]"
-					/>
-				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4">
-					<div className="grid-item lg:px-8">
-						<h3 className="headline-font text-2xl text-cyan-400 py-4">Radiant Discs</h3>
-						<div>
-							<Image
-								src="/images/RadiantDiscs.png"
-								alt=""
-								width={320}
-								height={300}
-								className="max-w-[320px] rounded-3xl"
-							></Image>
-						</div>
-						<p className="my-4 max-w-[400px]">
-							This is a mock store website that I created for myself and for demo purposes. Contains a
-							simple landing page and store where I can sell custom artwork disc golf discs. It is a fully
-							functional website I use to test out and experiment with features of Squarespace.
-						</p>
-						<div className="w-[130px] text-black mx-auto mt-6">
-							<Button text="View" destination="https://radiantdiscs.com"></Button>
-						</div>
-					</div>
-				</div>
+
 				<div className="w-full h-[200px]"></div>
 				<div id="line-break" className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
@@ -174,7 +140,7 @@ function Examples() {
 							learning experience with 3D effects.
 						</p>
 						<div className="w-[130px] text-black mx-auto mt-6">
-							<Button text="View" destination="" target="_blank"></Button>
+							<Button text="View" destination="https://cedaringvrart.com" target="_blank"></Button>
 						</div>
 					</div>
 				</div>
