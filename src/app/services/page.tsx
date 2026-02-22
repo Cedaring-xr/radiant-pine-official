@@ -172,11 +172,11 @@ function Services() {
 					<div className="column-item px-2 lg:px-8">
 						<h3 className="headline-font text-xl text-cyan-400 py-4">Accessibility Audit</h3>
 						<p className="max-w-[700px]">
-							Accessibility refers to the ability to navigate and use a website by persons with
-							disabilities. ADA (American Disability Act) applies to online businesses as well as physical
-							locations. There are various guidelines to adhering to ADA compliance when building a
-							website. Websites available as public services or affiliated with city/government that are
-							not accessible could be subject to legal issues down the road.
+							Accessibility refers to the ability to navigate and use a website by individuals with
+							limitations or disabilities. ADA (American Disability Act) applies to online businesses as
+							well as physical locations. There are various guidelines to adhering to ADA compliance when
+							building a website. Websites available as public services or affiliated with city/government
+							that are not accessible could be subject to legal issues down the road.
 						</p>
 					</div>
 				</div>
