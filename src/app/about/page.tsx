@@ -25,7 +25,7 @@ function About() {
 		})
 	}, [])
 	return (
-		<div id="about-mainContainer" className="bg-[#0b0d15] overflow-hidden">
+		<main id="about-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/6a.webp'})` }}
@@ -111,7 +111,7 @@ function About() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	)
 }
 

@@ -22,7 +22,7 @@ function Examples() {
 		})
 	}, [])
 	return (
-		<div id="examples-mainContainer" className="bg-[#0b0d15] overflow-hidden">
+		<main id="examples-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/5a.webp'})` }}
@@ -41,9 +41,9 @@ function Examples() {
 				<div className="w-full h-[200px]"></div>
 				<div id="line-break" className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
-					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
+					<h2 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
 						Website Feedback & Updates
-					</h3>
+					</h2>
 					<Image
 						src="/images/circuitSVGsmall.png"
 						alt=""
@@ -115,9 +115,9 @@ function Examples() {
 				<div className="w-full h-[200px]"></div>
 				<div id="line-break" className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
-					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
+					<h2 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
 						WordPress Websites
-					</h3>
+					</h2>
 					<Image
 						src="/images/circuitSVGsmall.png"
 						alt=""
@@ -140,9 +140,9 @@ function Examples() {
 				</div>
 				<div id="line-break" className="w-full flex justify-center items-center mb-16">
 					<Image src="/images/circuitSVGsmall.png" alt="" width={264} height={34} className="max-h-[34px]" />
-					<h3 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
+					<h2 className="text-white text-center pt-1 headline-font text-2xl md:text-3xl w-[400px]">
 						Custom Built Sites
-					</h3>
+					</h2>
 					<Image
 						src="/images/circuitSVGsmall.png"
 						alt=""
@@ -221,7 +221,7 @@ function Examples() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	)
 }
 

@@ -21,7 +21,7 @@ function FAQpage() {
 		})
 	}, [])
 	return (
-		<div id="faq-container" className="bg-[#0b0d15] overflow-hidden">
+		<main id="faq-container" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/8a.webp'})` }}
@@ -36,13 +36,13 @@ function FAQpage() {
 			</div>
 			<div id="spacer" className="w-full h-[700px]"></div>
 			<div className="pt-12 text-white">
-				<h1 className="text-sm md:text-base serif-font flex justify-center p-6 md:px-24">
+				<p className="text-sm md:text-base serif-font flex justify-center p-6 md:px-24">
 					*Feel free to email me if you have any other specific questions or need clarification on any
 					concepts of website creation.
-				</h1>
+				</p>
 				<AccordionTemplate></AccordionTemplate>
 			</div>
-		</div>
+		</main>
 	)
 }
 

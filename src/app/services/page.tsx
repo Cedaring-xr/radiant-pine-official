@@ -23,7 +23,7 @@ function Services() {
 		})
 	}, [])
 	return (
-		<div id="services-mainContainer" className="bg-[#0b0d15] overflow-hidden">
+		<main id="services-mainContainer" className="bg-[#0b0d15] overflow-hidden">
 			<div
 				id="bottomImage"
 				style={{ backgroundImage: `url(${'/images/mtnTrianglesBackground.webp'})` }}
@@ -225,7 +225,7 @@ function Services() {
 				</div>
 				<div id="" className="w-full h-[300px]"></div>
 			</div>
-		</div>
+		</main>
 	)
 }
 

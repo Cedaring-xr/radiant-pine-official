@@ -41,12 +41,12 @@ export default function AccordionTemplate() {
 					</AccordionItemButton>
 				</AccordionItemHeading>
 				<AccordionItemPanel className="md:mx-16 max-w-[1200px]">
-					<h4 className="question">What is a CMS?</h4>
+					<h3 className="question">What is a CMS?</h3>
 					<p>
 						CMS stands for Content Management System. Essentially a CMS is a platform for building and
 						managing websites. Some of the most common CMS are WordPress, Squarespace, Wix, Weblfow.
 					</p>
-					<h4 className="question">What hosting options are available for websites?</h4>
+					<h3 className="question">What hosting options are available for websites?</h3>
 					<p>
 						There are many hosting options that vary in what they offer. Some try to bundle domains,
 						hosting, and build tools together in order to streamline the process. This is not always the
@@ -54,13 +54,13 @@ export default function AccordionTemplate() {
 						as they do not lock you into extra tools that are not used. I use AWS for hosting all of my
 						personal websites.
 					</p>
-					<h4 className="question">How much should you be paying for a new website?</h4>
+					<h3 className="question">How much should you be paying for a new website?</h3>
 					<p>
 						Website prices vary quite a lot. Average prices end up around $20 - $50 per month for a business
 						website. Extra features and support options can quickly raise prices. Websites that are built
 						from scratch and self hosted are significantly cheaper compared to using a CMS service.
 					</p>
-					<h4 className="question">Should you hire a designer/developer to build your website?</h4>
+					<h3 className="question">Should you hire a designer/developer to build your website?</h3>
 					<p>
 						If you have the budget and do not want to be as involved with the website, then yes hiring a
 						designer/developer is a good idea. You will get a more professional experience and better end
@@ -89,26 +89,26 @@ export default function AccordionTemplate() {
 					</AccordionItemButton>
 				</AccordionItemHeading>
 				<AccordionItemPanel className="md:mx-16 max-w-[1200px]">
-					<h4 className="question">How to assess if your website needs updates or improvements?</h4>
+					<h3 className="question">How to assess if your website needs updates or improvements?</h3>
 					<p>
 						Through thoroughly testing the website. If you do not know where things are broken or what
 						content is wrong then you will not know if you need updates. Also if your website has not been
 						updated in several years, then it might be time to consider a rework.
 					</p>
-					<h4 className="question">How often should a website be updated?</h4>
+					<h3 className="question">How often should a website be updated?</h3>
 					<p>
 						It mostly depends on the type of website. Ones that have an event schedule or time based content
 						will need updates more frequently. Even static website should be updated about twice a year.
 						This ensures that the content is accurate as well as helps search engines to rank higher on the
 						list.
 					</p>
-					<h4 className="question">How can I change website themes?</h4>
+					<h3 className="question">How can I change website themes?</h3>
 					<p>
 						Website builder themes are pre-built layouts that provide a structure for adding in your own
 						content. Most of the time themes can not be interchanged without making lots of other changes.
 						It is fine to try out theme changes if you can revert easily.
 					</p>
-					<h4 className="question">In what case would a website need to be re-built?</h4>
+					<h3 className="question">In what case would a website need to be re-built?</h3>
 					<p>
 						A website re-build is a lengthy process. Most of the time it is better to try and improve a
 						current version. If the website was built incorrectly the first time or becomes hard to manage
@@ -136,15 +136,15 @@ export default function AccordionTemplate() {
 					</AccordionItemButton>
 				</AccordionItemHeading>
 				<AccordionItemPanel className="md:mx-16 max-w-[1200px]">
-					<h4 className="question">How much should a domain name cost?</h4>
+					<h3 className="question">How much should a domain name cost?</h3>
 					<p>
 						Domain names are pretty much the same price no matter where you buy them from. $15 - $20 per
 						year is standard. It is generally not a good idea to buy an expensive domain name. Try to find
 						one that matches your business name for the base price.
 					</p>
-					<h4 className="question">
+					<h3 className="question">
 						If I buy a domain from one company do I have to build my website from them also?
-					</h4>
+					</h3>
 					<p>
 						Short answer is no. Most domain registration companies will let you use the domain name with a
 						variety of website hosting platforms. Buying a domain name from the same platform in which you
@@ -172,13 +172,13 @@ export default function AccordionTemplate() {
 					</AccordionItemButton>
 				</AccordionItemHeading>
 				<AccordionItemPanel className="md:mx-16 max-w-[1200px]">
-					<h4 className="question">What is SEO?</h4>
+					<h3 className="question">What is SEO?</h3>
 					<p>
 						SEO stands for search engine optimization. This refers to how a website is listed when users
 						perform searches through Google or other search engines. There are many factors that go into how
 						rankings are calculated.
 					</p>
-					<h4 className="question">How can I improve SEO for my website?</h4>
+					<h3 className="question">How can I improve SEO for my website?</h3>
 					<p>
 						SEO rankings can become quite complicated when first diving into it. In general, registering a
 						business location, having a functional current website and other social platform accounts, not
